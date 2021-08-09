@@ -1,188 +1,259 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
 
- body {
-	 height: 100vh;
-	 font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-	 font-family: "DM Mono", monospace;
-	 font-weight: 300;
-	 overflow: scroll;
-	 color: black;
-	 text-align: left;
-	 background-color: rgb(255, 255, 255);
-}
- h1 {
-	 font-size: 3em;
-	 margin-bottom: 0.2em;
-}
- h2 {
-	 font-size: 2em;
-}
- .main {
-	 margin-top: 10vh;
-	 display: flex;
-	 flex-direction: column;
-	 flex-wrap: wrap;
-	 position: relative;
-	 justify-content: center;
-	 align-items: center;
+body {
+	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	font-family: "DM Mono", monospace;
+	font-weight: 300;
+	overflow: scroll;
+	color: black;
+	text-align: left;
+	background-color: rgb(255, 255, 255);
 }
 
- .main:before, .main:after {
-	 content: "";
-	 display: block;
-	 position: absolute;
-	 z-index: -3;
+.hero {
+	width: 80%;
 }
+
+.floatLeft {
+	float: left;
+	max-width: 30%;
+}
+
+.floatLeft p {
+	font-size: medium;
+}
+
+.floatRight {
+	float: right;
+	width: 10%;
+}
+
+.services {
+	width: 100%;
+	text-align: center;
+}
+
+.fontSmall {
+	font-size: small;
+}
+
+.fontBig {
+	font-size: large;
+}
+
+.form {
+	width: 80%;
+}
+
+.form p {
+	text-align: left;
+}
+
+.form input{margin: 0 5 0 5;}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 0.2em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.main {
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.main:before,
+.main:after {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -3;
+}
+
 .geo-arrow {
 	fill: none;
 	stroke: #000;
 	stroke-width: 2;
 	stroke-miterlimit: 10
-  }
- 
- .arrow {
-	 z-index: 1000;
-	 opacity: 0.5;
-	 position: absolute;
 }
- .arrow--top {
-	 top: 0;
-	 left: -5em;
+
+.arrow {
+	z-index: 1000;
+	opacity: 0.5;
+	position: absolute;
 }
- .arrow--bottom {
-	 bottom: -40em;
-	 right: 2em;
+
+.arrow--top {
+	top: 0;
+	left: -5em;
 }
-.hideme
-{
-    opacity:0;
+
+.arrow--bottom {
+	bottom: -40em;
+	right: 2em;
 }
- .draw-in {
-	 stroke-dasharray: 1000;
-	 stroke-dashoffset: 10;
-	 animation: draw 15s ease-in-out alternate infinite;
+
+.hideme {
+	opacity: 0;
 }
- @keyframes draw {
-	 from {
-		 stroke-dashoffset: 1000;
+
+.draw-in {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 10;
+	animation: draw 15s ease-in-out alternate infinite;
+}
+
+@keyframes draw {
+	from {
+		stroke-dashoffset: 1000;
 	}
-	 to {
-		 stroke-dashoffset: 0;
-	}
-}
- .item-to {
-	 animation-duration: 10s;
-	 animation-iteration-count: infinite;
-	 transform-origin: bottom;
-}
- .bounce-1 {
-	 animation-name: bounce-1;
-	 animation-timing-function: ease;
-}
- .bounce-2 {
-	 animation-name: bounce-2;
-	 animation-timing-function: ease;
-}
- .bounce-3 {
-	 animation-name: bounce-3;
-	 animation-timing-function: ease;
-}
- @keyframes bounce-1 {
-	 0% {
-		 transform: translateY(0);
-	}
-	 50% {
-		 transform: translateY(50px);
-	}
-	 100% {
-		 transform: translateY(0);
+
+	to {
+		stroke-dashoffset: 0;
 	}
 }
- @keyframes bounce-2 {
-	 0% {
-		 transform: translateY(0);
+
+.item-to {
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	transform-origin: bottom;
+}
+
+.bounce-1 {
+	animation-name: bounce-1;
+	animation-timing-function: ease;
+}
+
+.bounce-2 {
+	animation-name: bounce-2;
+	animation-timing-function: ease;
+}
+
+.bounce-3 {
+	animation-name: bounce-3;
+	animation-timing-function: ease;
+}
+
+@keyframes bounce-1 {
+	0% {
+		transform: translateY(0);
 	}
-	 50% {
-		 transform: translateY(-30px);
+
+	50% {
+		transform: translateY(50px);
 	}
-	 100% {
-		 transform: translateY(0);
+
+	100% {
+		transform: translateY(0);
 	}
 }
- @keyframes bounce-3 {
-	 0% {
-		 transform: translateY(0);
+
+@keyframes bounce-2 {
+	0% {
+		transform: translateY(0);
 	}
-	 50% {
-		 transform: translateY(30px);
+
+	50% {
+		transform: translateY(-30px);
 	}
-	 100% {
-		 transform: translateY(0);
-	}
-}
- @keyframes rotation {
-	 from {
-		 transform: rotate(0deg);
-	}
-	 to {
-		 transform: rotate(360deg);
+
+	100% {
+		transform: translateY(0);
 	}
 }
- @keyframes gradient-fade {
-	 from {
-		 transform: translate(10%, -10%) rotate(0deg);
+
+@keyframes bounce-3 {
+	0% {
+		transform: translateY(0);
 	}
-	 to {
-		 transform: translate(50%, -50%) rotate(360deg);
+
+	50% {
+		transform: translateY(30px);
+	}
+
+	100% {
+		transform: translateY(0);
 	}
 }
- @keyframes gradient-fade-alt {
-	 from {
-		 transform: translate(-20%, 20%) rotate(0deg);
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
 	}
-	 to {
-		 transform: translate(-60%, 60%) rotate(360deg);
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes gradient-fade {
+	from {
+		transform: translate(10%, -10%) rotate(0deg);
+	}
+
+	to {
+		transform: translate(50%, -50%) rotate(360deg);
+	}
+}
+
+@keyframes gradient-fade-alt {
+	from {
+		transform: translate(-20%, 20%) rotate(0deg);
+	}
+
+	to {
+		transform: translate(-60%, 60%) rotate(360deg);
 	}
 }
 
 /*DARK MODE CSS*/
 
-.body-dark{
+.body-dark {
 	background-color: black;
-	 font-family: "DM Mono", monospace;
-	 font-weight: 300;
-	 overflow: scroll;
-	 color: rgb(255, 255, 255);
-	 text-align: left;
+	font-family: "DM Mono", monospace;
+	font-weight: 300;
+	overflow: scroll;
+	color: rgb(255, 255, 255);
+	text-align: left;
 }
-.geo-arrow-dark {
+
+.geo-arrow.dark {
 	fill: none;
 	stroke: rgb(255, 255, 255);
 	stroke-width: 2;
 	stroke-miterlimit: 10
-  }
+}
 
 /*slider*/
 
-  .theme-switch-wrapper {
+.theme-switch-wrapper {
 	display: flex;
 	align-items: center;
 	margin-right: -70%;
 
-  }
-  .theme-switch {
+}
+
+.theme-switch {
 	display: inline-block;
 	height: 34px;
 	position: relative;
 	width: 60px;
 	margin: 0 5 0 5;
-  }
-  
-  .theme-switch input {
-	display:none;
-  }
-  
-  .slider {
+}
+
+.theme-switch input {
+	display: none;
+}
+
+.slider {
 	background-color: #ccc;
 	bottom: 0;
 	cursor: pointer;
@@ -191,9 +262,9 @@
 	right: 0;
 	top: 0;
 	transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
 	background-color: #fff;
 	bottom: 4px;
 	content: "";
@@ -202,21 +273,20 @@
 	position: absolute;
 	transition: .4s;
 	width: 26px;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
 	background-color: #66bb6a;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
 	transform: translateX(26px);
-  }
-  
-  .slider.round {
+}
+
+.slider.round {
 	border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
 	border-radius: 50%;
-  }
- 
+}

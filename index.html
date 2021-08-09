@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css" id="themeLink">
   <link rel="stylesheet" href="styles/animate.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -17,60 +17,67 @@
 
 <body>
   <div class="main">
-      <div class="theme-switch-wrapper"><i class="fas fa-sun"></i>
-        <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-        </label><i class="fas fa-moon"></i>
-      </div>
 
-  
-    <div id="hero" class="hero-1" style="width: 80%; height: 30vh;">
-      <div style="float: left; max-width: 30%;">SANDRA ROSA IS A TRANSLATOR BASED IN LISBON.
-        <p style="font-size: medium;">for her translatior blah blah blah blah blah blah blah blah blah blah blah blah
-          blah blah blah blah blah blah </p>
-      </div>
-      <div style="float: right; width: 10%;">
-        <p><i class="fab fa-linkedin-in"></i></p>
-        <p><i class="fab fa-twitter"></i></p>
-        <p><i class="fab fa-medium-m"></i></p>
-      </div>
-    </div>
-    <div id="services" class="hideme" style="width: 100%; text-align: center;">
-      <div>
-        <h3>SERVICES </h3>
-        <p style="font-size: small;">description</p>
-      </div>
-      <div>
-        <h3>SERVICES</h3>
-        <p style="font-size: small;">description</p>
-      </div>
-      <div>
-        <h3>SERVICES</h3>
-        <p style="font-size: small;">description</p>
-      </div>
-      <div>
-        <h3>SERVICES</h3>
-        <p style="font-size: small;">description</p>
-      </div>
-    </div>
-    <div style="width: 100%; text-align: center;">
-      <p style="font-size: large;">she has gathered blah blah blah</p>
+    <div class="theme-switch-wrapper"><i class="fas fa-sun"></i>
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label><i class="fas fa-moon"></i>
     </div>
 
-    <div id="form" style="width: 80%;">
-      <p style="text-align: left;">For exciting collabs</p>
+    <section id="hero" class="hero">
+      <div>
+        <div class="floatLeft">SANDRA ROSA IS A TRANSLATOR BASED IN LISBON.
+          <p>for her translatior blah blah blah blah blah blah blah blah blah blah blah blah
+            blah blah blah blah blah blah </p>
+        </div>
+        <div class="floatRight">
+          <p><i class="fab fa-linkedin-in"></i></p>
+          <p><i class="fab fa-twitter"></i></p>
+          <p><i class="fab fa-medium-m"></i></p>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <div class="hideme">
+        <div>
+          <h3>SERVICES </h3>
+          <p class="fontSmall">description</p>
+        </div>
+        <div>
+          <h3>SERVICES</h3>
+          <p class="fontSmall">description</p>
+        </div>
+        <div>
+          <h3>SERVICES</h3>
+          <p class="fontSmall">description</p>
+        </div>
+        <div>
+          <h3>SERVICES</h3>
+          <p class="fontSmall">description</p>
+        </div>
+      </div>
+      <div>
+        <p class="fontBig">she has gathered blah blah blah</p>
+      </div>
+    </section>
+<section id="form" class="form">
+    <div>
+      <form name="contact" method="POST" data-netlify="true">
+      <p>For exciting collabs</p>
       <p><input type="text" placeholder="Name*"><input type="text" placeholder="Company"></p>
       <p><input type="email" placeholder="Email*"></p>
       <p><input type="text" placeholder="Subject*"></p>
 
-      <p>Required budget? <input id="budgetCheck" type="checkbox"></p>
+      <p>Request budget <input id="budgetCheck" type="checkbox"></p>
 
       <p><input type="text" id="budgetService" disabled placeholder="Service"></p>
       <p><input type="text" id="budgetPair" disabled placeholder="Language Pair"> <input type="number" id="budgetWord"
           disabled class="budgetVisible" placeholder="Number of words"></p>
       <p><textarea cols="40" rows="5" placeholder="Message"></textarea></p>
-    </div>
+      <input type="button" value="Submit"></form>
+    </form></div>
+</section>
   </div>
   <div class="arrow arrow--top">
     <svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="649.9" overflow="visible">
@@ -85,31 +92,15 @@
   <div class="arrow arrow--bottom">
     <svg xmlns="http://www.w3.org/2000/svg" width="31.35" height="649.9" overflow="visible">
       <g class="item-to bounce-1">
-        <circle id="arrow" class="geo-arrow item-to bounce-3" cx="15.5" cy="580.36" r="7.96" />
-        <circle id="arrow1" class="geo-arrow draw-in" cx="15.5" cy="610.4" r="7.96" />
-        <circle id="arrow2" class="geo-arrow item-to bounce-2" cx="15.5" cy="640.44" r="7.96" />
+        <circle class="geo-arrow item-to bounce-3" cx="15.5" cy="580.36" r="7.96" />
+        <circle class="geo-arrow draw-in" cx="15.5" cy="610.4" r="7.96" />
+        <circle class="geo-arrow item-to bounce-2" cx="15.5" cy="640.44" r="7.96" />
         <g class="item-to bounce-2">
-          <path id="arrow3" class="geo-arrow draw-in" d="M28.94 30.4l-13.26-27-13.27 27zM15.68 5.4v552" />
+          <path class="geo-arrow draw-in" d="M28.94 30.4l-13.26-27-13.27 27zM15.68 5.4v552" />
         </g>
       </g>
     </svg>
   </div>
-  <button onclick="myFunction()">Toggle dark mode</button>
-
-  <script>
-    function myFunction() {
-      var element = document.body;
-      element.classList.toggle("body-dark");
-      var asd = document.getElementById("arrow");
-      var asd1 = document.getElementById("arrow1");
-      var asd2 = document.getElementById("arrow2");
-      var asd3 = document.getElementById("arrow3");
-      asd.classList.toggle("geo-arrow-dark");
-      asd1.classList.toggle("geo-arrow-dark");
-      asd2.classList.toggle("geo-arrow-dark");
-      asd3.classList.toggle("geo-arrow-dark");
-    }
-  </script>
 
   <script>
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
@@ -123,40 +114,16 @@
       }
     }
 
-    /*function switchTheme(e) {
-      if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-      }
-    }*/
     function switchTheme(e) {
-     /*  if (e.target.checked) { */
-        var element = document.body;
-      element.classList.toggle("body-dark");
-      var asd = document.getElementById("arrow");
-      var asd1 = document.getElementById("arrow1");
-      var asd2 = document.getElementById("arrow2");
-      var asd3 = document.getElementById("arrow3");
-      asd.classList.toggle("geo-arrow-dark");
-      asd1.classList.toggle("geo-arrow-dark");
-      asd2.classList.toggle("geo-arrow-dark");
-      asd3.classList.toggle("geo-arrow-dark");
-     /* }  else {
 
-      element.classList.toggle("body-dark");
-      var asd = document.getElementById("arrow");
-      var asd1 = document.getElementById("arrow1");
-      var asd2 = document.getElementById("arrow2");
-      var asd3 = document.getElementById("arrow3");
-      asd.classList.toggle("geo-arrow-dark");
-      asd1.classList.toggle("geo-arrow-dark");
-      asd2.classList.toggle("geo-arrow-dark");
-      asd3.classList.toggle("geo-arrow-dark");
-      } */
-     
+      const theme = document.querySelector("#themeLink");
+
+      // Swap out the URL for the different stylesheets
+      if (theme.getAttribute("href") == "styles/styles.css") {
+        theme.href = "styles/dark-styles.css";
+      } else {
+        theme.href = "styles/styles.css";
+      }
     }
 
     toggleSwitch.addEventListener('change', switchTheme, false);
