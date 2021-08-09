@@ -2,7 +2,7 @@
 
 /* For mobile phones: */
 [class*="col-"] {
-	width: 100%;
+	width: 90%;
 	
   }
   
@@ -41,6 +41,8 @@
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
+
+	
    }
 
 
