@@ -215,6 +215,21 @@ h2 {
     }
 }
 
+.submitBtn {
+	font-family: lato,sans-serif;
+	font-weight: bold;
+	font-size: 0.5em;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	color: #000000;
+	display: inline-block;
+	padding: 5px 20px 5px 20px;
+	position: relative;
+	border: 1px solid #FFFFFF;
+	border-radius: 25px;
+  }
+
+
 /*slider*/
 
 .theme-switch-wrapper {

@@ -1,5 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
 
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+  }
+
 body {
 	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 	font-family: "DM Mono", monospace;
@@ -28,9 +65,14 @@ body {
 	width: 10%;
 }
 
-.services {
-	width: 100%;
+.centerText {
+	
 	text-align: center;
+}
+
+.servicesDesc{
+	text-align: center;
+	margin: auto;
 }
 
 .fontSmall {
@@ -49,7 +91,7 @@ body {
 	text-align: left;
 }
 
-.form input{margin: 0 5 0 5;}
+.form input{margin: 0 2 0 2;}
 
 h1 {
 	font-size: 3em;
@@ -214,23 +256,19 @@ h2 {
 	}
 }
 
-/*DARK MODE CSS*/
-
-.body-dark {
-	background-color: black;
-	font-family: "DM Mono", monospace;
-	font-weight: 300;
-	overflow: scroll;
-	color: rgb(255, 255, 255);
-	text-align: left;
-}
-
-.geo-arrow.dark {
-	fill: none;
-	stroke: rgb(255, 255, 255);
-	stroke-width: 2;
-	stroke-miterlimit: 10
-}
+.submitBtn {
+	font-family: lato,sans-serif;
+	font-weight: bold;
+	font-size: 0.5em;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	color: #000000;
+	display: inline-block;
+	padding: 5px 20px 5px 20px;
+	position: relative;
+	border: 1px solid #000000;
+	border-radius: 25px;
+  }
 
 /*slider*/
 
