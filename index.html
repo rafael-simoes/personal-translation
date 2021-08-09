@@ -70,30 +70,32 @@
         </div>
       </div>
       <div>
-        <p class="col-3 fontBig servicesDesc" style="padding: 20 0 10 0;"> Lorem ipsum dolor sit amet consectetur, adipisicing
+        <p class="col-3 fontBig servicesDesc" style="padding: 20 0 10 0;"> Lorem ipsum dolor sit amet consectetur,
+          adipisicing
           elit. Similique quibusdam autem et ut
           dolore non recusandae, dolores minus qui nam, labore numquam architecto provident illo enim voluptatum impedit
           voluptates eligendi!</p>
       </div>
     </section>
     <section id="form" class="form">
+      <div class="col-10">
+        <form name="contact" method="POST" data-netlify="true">
+          <p>For exciting collabs</p>
 
-      <form name="contact" method="POST" data-netlify="true">
-        <p>For exciting collabs</p>
-
-        <p><input type="text" name="name" id="name" placeholder="Name*"><input id="company" name="company" type="text"
-            placeholder="Company"></p>
-        <p><input type="email" name="email" id="email" placeholder="Email*"></p>
-        <p><input type="text" name="subject" id="subject" placeholder="Subject*"></p>
-        <p>Request budget <input id="budgetCheck" type="checkbox"></p>
-        <p><input type="text" id="budgetService" name="budgetService" disabled placeholder="Service"></p>
-        <p><input type="text" id="budgetPair" name="budgetPair" disabled placeholder="Language Pair"><input
-            type="number" id="budgetWord" name="budgetWord" disabled class="budgetVisible"
-            placeholder="Number of words"></p>
-        <p><textarea cols="40" rows="5" id="message" name="message" placeholder="Message"></textarea></p>
-        <input type="submit" class="submitBtn" value="Submit">
-      </form>
-
+          <p><input type="text" name="name" id="name" placeholder="Name*"><input id="company" name="company" type="text"
+              placeholder="Company"></p>
+          <p><input type="email" name="email" id="email" placeholder="Email*"></p>
+          <p><input type="text" name="subject" id="subject" placeholder="Subject*"></p>
+          <p>Request budget <input id="budgetCheck" type="checkbox"></p>
+          <p><input type="text" id="budgetService" name="budgetService" disabled placeholder="Service"></p>
+          <p><input type="text" id="budgetPair" name="budgetPair" disabled placeholder="Language Pair"><input
+              type="number" id="budgetWord" name="budgetWord" disabled class="budgetVisible"
+              placeholder="Number of words"></p>
+          <p><textarea cols="40" rows="5" id="message" name="message" placeholder="Message"
+              style="resize: none;"></textarea></p>
+          <input type="submit" class="submitBtn" value="Submit">
+        </form>
+      </div>
     </section>
   </div>
   <div class="arrow arrow--top">

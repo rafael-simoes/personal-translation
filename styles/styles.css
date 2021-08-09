@@ -3,7 +3,13 @@
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
+	
   }
+  
+  input[type="text"] {
+	display: block;
+	margin : 0 auto;
+}
   
   @media only screen and (min-width: 600px) {
 	/* For tablets: */
@@ -35,7 +41,8 @@
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
-  }
+   }
+
 
 body {
 	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
