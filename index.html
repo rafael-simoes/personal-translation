@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css" id="themeLink">
-  <!-- <link rel="stylesheet" href="styles/animate.css"> -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <script src="https://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript"></script>
@@ -26,15 +25,16 @@
     </div>
     <section class="hero">
       <div id="hero">
-        <div class="floatLeft">SANDRA ROSA IS A TRANSLATOR BASED IN LISBON.
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident pariatur fugiat explicabo sint
+        <div class="floatLeft"><span class="fontBold fontMedium">SANDRA ROSA IS A TRANSLATOR BASED IN LISBON.</span>
+          <p class="fontSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident pariatur fugiat explicabo sint
             delectus, recusandae reiciendis vitae, blanditiis totam eum exercitationem, aspernatur facilis temporibus
             culpa nam sit porro dolores.</p>
         </div>
         <div class="floatRight">
-          <p><i class="fab fa-linkedin-in"></i></p>
-          <p><i class="fab fa-twitter"></i></p>
-          <p><i class="fab fa-medium-m"></i></p>
+          <p style="width: 2px; height: 50px; background-color: black; margin: auto; margin-top: 20;"></p>
+          <p><i class="fab fa-linkedin-in icon"></i></p>
+          <p><i class="fab fa-twitter icon"></i></p>
+          <p><i class="fab fa-medium-m icon"></i></p>
         </div>
       </div>
     </section>
@@ -70,7 +70,7 @@
         </div>
       </div>
       <div>
-        <p class="col-2 fontBig servicesDesc" style="padding: 20 0 10 0;"> Lorem ipsum dolor sit amet consectetur,
+        <p class="col-2 fontMedium servicesDesc" style="padding: 10 0 10 0;"> Lorem ipsum dolor sit amet consectetur,
           adipisicing
           elit. Similique quibusdam autem et ut
           dolore non recusandae, dolores minus qui nam, labore numquam architecto provident illo enim voluptatum impedit
@@ -80,13 +80,13 @@
     <section id="form" class="form">
       <div class="col-10">
         <form name="contact" method="POST" data-netlify="true">
-          <p>For exciting collabs</p>
+          <p class="fontMedium fontBold">For exciting collabs</p>
 
           <p><input type="text" name="name" id="name" placeholder="Name*"><input id="company" name="company" type="text"
               placeholder="Company"></p>
           <p><input type="email" name="email" id="email" placeholder="Email*"></p>
           <p><input type="text" name="subject" id="subject" placeholder="Subject*"></p>
-          <p>Request budget <input id="budgetCheck" type="checkbox"></p>
+          <p class="fontMedium fontBold">Request budget <input id="budgetCheck" type="checkbox"></p>
           <p><input type="text" id="budgetService" name="budgetService" disabled placeholder="Service"></p>
           <p><input type="text" id="budgetPair" name="budgetPair" disabled placeholder="Language Pair"><input
               type="number" id="budgetWord" name="budgetWord" disabled class="budgetVisible"
