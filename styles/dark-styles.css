@@ -5,15 +5,18 @@
 	width: 100%;
 }
 
-input[type="text"] ,input[type="number"] ,input[type="email"] ,textarea  {
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
 	display: inline-block;
 	margin: 2% auto;
-    max-width: 80%;
+	max-width: 80%;
 }
 
 input[type="submit"] {
 	display: inline-block;
-	margin-left:-15rem;
+	margin-left: -15rem;
 
 }
 
@@ -32,6 +35,7 @@ body {
 	font-size: 1.5rem;
 	margin-left: 20%;
 }
+
 .vertiLine {
 	width: 2px;
 	height: 50px;
@@ -39,6 +43,7 @@ body {
 	margin: auto;
 	margin-top: 20;
 }
+
 .hero {
 	width: 80%;
 }
@@ -71,12 +76,17 @@ body {
 	font-size: 0.8rem;
 }
 
-.fontMedium{font-size: 1rem;}
+.fontMedium {
+	font-size: 1rem;
+}
 
 .fontBig {
 	font-size: 2rem;
 }
-.fontBold{font-weight: bold;}
+
+.fontBold {
+	font-weight: bold;
+}
 
 form p {
 	text-align: center;
@@ -254,12 +264,17 @@ h2 {
 	font-size: 0.7rem;
 	letter-spacing: 0.1rem;
 	text-decoration: none;
-	color: #000000;
+	color: white;
 	display: inline-block;
 	padding: 5px 20px 5px 20px;
 	position: relative;
-	border: 2px solid #000000;
-	border-radius: 25px;
+	border: 2px solid white;
+	background-color: black;
+}
+
+.submitBtn:hover{
+	background-color: white;
+	color: black;
 }
 
 /*--------------------------------------slider start---------------------------------------------------*/
@@ -439,26 +454,33 @@ input:checked+.slider:before {
 	.submitBtn {
 		font-family: lato, sans-serif;
 		font-weight: bold;
-		font-size: 0.5rem;
+		font-size: 0.7rem;
 		letter-spacing: 0.1rem;
 		text-decoration: none;
-		color: #000000;
+		color: white;
 		display: inline-block;
 		padding: 5px 20px 5px 20px;
 		position: relative;
-		border: 2px solid #000000;
-		border-radius: 25px;
+		border: 2px solid white;
+		background-color: black;
+	}
+	
+	.submitBtn:hover{
+		background-color: white;
+		color: black;
 	}
 
+	.form {
+		margin-left: -50%;
+		text-align: left;
+	}
 
-	.form {margin-left: -50%;
-	text-align: left;}
 	form p {
 		text-align: left;
 	}
-	
-	
-	
+
+
+
 
 }
 
