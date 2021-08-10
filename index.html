@@ -26,12 +26,13 @@
     <section class="hero">
       <div id="hero">
         <div class="floatLeft"><span class="fontBold fontMedium">SANDRA ROSA IS A TRANSLATOR BASED IN LISBON.</span>
-          <p class="fontSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident pariatur fugiat explicabo sint
+          <p class="fontSmall">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident pariatur fugiat
+            explicabo sint
             delectus, recusandae reiciendis vitae, blanditiis totam eum exercitationem, aspernatur facilis temporibus
             culpa nam sit porro dolores.</p>
         </div>
         <div class="floatRight">
-          <p style="width: 2px; height: 50px; background-color: black; margin: auto; margin-top: 20;"></p>
+          <p class="vertiLine"></p>
           <p><i class="fab fa-linkedin-in icon"></i></p>
           <p><i class="fab fa-twitter icon"></i></p>
           <p><i class="fab fa-medium-m icon"></i></p>
@@ -78,22 +79,23 @@
       </div>
     </section>
     <section id="form" class="form">
-      <div class="col-10">
-        <form name="contact" method="POST" data-netlify="true">
+      <div>
+        <form name="contact" method="POST" data-netlify="true" class="centerText">
           <p class="fontMedium fontBold">For exciting collabs</p>
 
-          <p><input type="text" name="name" id="name" placeholder="Name*"><input id="company" name="company" type="text"
-              placeholder="Company"></p>
-          <p><input type="email" name="email" id="email" placeholder="Email*"></p>
-          <p><input type="text" name="subject" id="subject" placeholder="Subject*"></p>
+          <input class="col-2" type="text" name="name" id="name" placeholder="Name*">
+            <input class="col-2" id="company" name="company" type="text" placeholder="Company">
+          <input class="col-2" type="email" name="email" id="email" placeholder="Email*">
+          <input class="col-2" type="text" name="subject" id="subject" placeholder="Subject*">
           <p class="fontMedium fontBold">Request budget <input id="budgetCheck" type="checkbox"></p>
-          <p><input type="text" id="budgetService" name="budgetService" disabled placeholder="Service"></p>
-          <p><input type="text" id="budgetPair" name="budgetPair" disabled placeholder="Language Pair"><input
-              type="number" id="budgetWord" name="budgetWord" disabled class="budgetVisible"
-              placeholder="Number of words"></p>
-          <p><textarea cols="40" rows="5" id="message" name="message" placeholder="Message"
-              style="resize: none;"></textarea></p>
-          <p style="margin-left:-55%;"><input type="submit" class="submitBtn" value="Submit"></p>
+          <input class="col-5" type="text" id="budgetService" name="budgetService" disabled placeholder="Service">
+          
+          <input class="col-5" type="text" id="budgetPair" name="budgetPair" disabled
+              placeholder="Language Pair"><input class="col-5" type="number" id="budgetWord" name="budgetWord" disabled
+              class="budgetVisible" placeholder="Number of words">
+          <textarea cols="40" rows="5" id="message" name="message" placeholder="Message"
+              style="resize: none;"></textarea>
+          <p><input type="submit" class="submitBtn" value="Submit"></p>
         </form>
       </div>
     </section>
