@@ -12,6 +12,9 @@ textarea {
 	display: inline-block;
 	margin: 2% auto;
 	max-width: 80%;
+	background-color: black;
+	color: white;
+	border: 2px solid #fff;
 }
 
 input[type="submit"] {
@@ -19,7 +22,9 @@ input[type="submit"] {
 	margin-left: -15rem;
 
 }
-
+#services p{
+	width: 90%;
+}
 
 body {
 	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
