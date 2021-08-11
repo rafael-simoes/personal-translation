@@ -8,15 +8,29 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <script src="https://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript"></script>
+  
+  <!-- <script type="text/javascript">
+    $(document).ready(function() {
+      if (window.location.href.indexOf("OK") > -1) {
+        alert("Thanks for the submission!");
+      }
+    });
+  </script>
+   -->
 
-
-
-
+   <script type="text/javascript">
+    $(document).ready(function() {
+      if (window.location.href.indexOf("OK") > -1) {
+        document.getElementById("OK").style.opacity = "1";
+      }
+    });
+  </script>
   <title>Sandra Rosa - Translator</title>
 </head>
 
 <body>
   <div class="main">
+    <div id="OK" style="opacity: 0; margin: 10 auto;">Thanks for the submission!</div>
     <div class="theme-switch-wrapper"><i class="fas fa-sun"></i>
       <label class="theme-switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
@@ -80,22 +94,22 @@
     </section>
     <section id="form" class="form">
       <div>
-        <form name="contact" method="POST" data-netlify="true" class="centerText">
-          <p class="fontMedium fontBold">For exciting collabs</p>
+        <form action="index.html?submitted=OK" name="contact" method="POST" data-netlify="true" class="centerText">
+          <p class="fontMedium fontBold" style="text-align: left; margin-left: 2.2rem;">For exciting collabs</p>
 
           <input class="col-2" type="text" name="name" id="name" placeholder="Name*">
-            <input class="col-2" id="company" name="company" type="text" placeholder="Company">
+          <input class="col-2" id="company" name="company" type="text" placeholder="Company">
           <input class="col-2" type="email" name="email" id="email" placeholder="Email*">
           <input class="col-2" type="text" name="subject" id="subject" placeholder="Subject*">
-          <p class="fontMedium fontBold">Request budget <input id="budgetCheck" type="checkbox"></p>
+          <p class="fontMedium fontBold" style="text-align: left; margin-left: 2.2rem;">Request budget <input id="budgetCheck" type="checkbox"></p>
           <input class="col-5" type="text" id="budgetService" name="budgetService" disabled placeholder="Service">
-          
-          <input class="col-5" type="text" id="budgetPair" name="budgetPair" disabled
-              placeholder="Language Pair"><input class="col-5" type="number" id="budgetWord" name="budgetWord" disabled
-              class="budgetVisible" placeholder="Number of words">
+
+          <input class="col-5" type="text" id="budgetPair" name="budgetPair" disabled placeholder="Language Pair"><input
+            class="col-5" type="number" id="budgetWord" name="budgetWord" disabled class="budgetVisible"
+            placeholder="Number of words">
           <textarea cols="40" rows="5" id="message" name="message" placeholder="Message"
-              style="resize: none;"></textarea>
-          <p><input type="submit" class="submitBtn" value="Submit"></p>
+            style="resize: none;"></textarea>
+          <p style="text-align: right; margin: auto 35"><input type="submit" class="submitBtn" value="Submit"></p>
         </form>
       </div>
     </section>
@@ -148,7 +162,7 @@
     }
 
     toggleSwitch.addEventListener('change', switchTheme, false);
-  </script><!-- https://codepen.io/annalarson/pen/GesqK -->
+  </script>
   <script>
     $(document).ready(function () {
       $("#budgetCheck").change(function () {
@@ -188,6 +202,8 @@
 
     });
   </script>
+
+
 </body>
 
 
