@@ -158,6 +158,12 @@ h2 {
 	opacity: 0;
 }
 
+.formSubmit {
+	text-align: right;
+	margin: auto 35;
+}
+
+
 /*--------------------------------------arrow animation start---------------------------------------------------*/
 .draw-in {
 	stroke-dasharray: 1000;

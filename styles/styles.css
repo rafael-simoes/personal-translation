@@ -59,7 +59,6 @@ body {
 .floatLeft {
 	float: left;
 	max-width: 75%;
-	/* max-width: 30%; */
 }
 
 .floatLeft p {
@@ -154,6 +153,12 @@ h2 {
 .hideme {
 	opacity: 0;
 }
+
+.formSubmit {
+	text-align: right;
+	margin: auto 35;
+}
+
 
 /*--------------------------------------arrow animation start---------------------------------------------------*/
 .draw-in {
