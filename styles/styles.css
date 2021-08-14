@@ -3,6 +3,7 @@
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
+	overflow-x: hidden;
 }
 
 input[type="text"],
