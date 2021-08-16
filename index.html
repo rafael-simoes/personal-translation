@@ -25,21 +25,20 @@
 <body>
   <div id="fullpage">
     <div class="main">
-
       <section class="section hero">
-        <div class="theme-switch-wrapper"><i class="fas fa-sun fontSmall"></i>
+        <div><div class="theme-switch-wrapper positionDark" ><i class="fas fa-sun fontSmall"></i>
           <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="slider round"></div>
-          </label><i class="fas fa-moon fontSmall"></i>
-        </div>
+          </label>
+          <i class="fas fa-moon fontSmall"></i>
+        </div></div>
         <div id="hero">
-          <div class="floatLeft"><span class="fontBold fontMedium">SANDRA ROSA IS A TRANSLATOR BASED IN LISBON.</span>
-            <p class="fontSmall" style="font-family: 'LeelaUI';">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident pariatur
-              fugiat
-              explicabo sint
-              delectus, recusandae reiciendis vitae, blanditiis totam eum exercitationem, aspernatur facilis temporibus
-              culpa nam sit porro dolores.</p>
+          <div class="floatLeft"><span class="fontBold fontBig">SANDRA ROSA IS A TRANSLATOR BASED IN LISBON.</span>
+            <p class="fontSmall" style="font-family: 'LeelaUI';">
+              <span>For her, translation is all about knowledge.</span>
+              <span> She seeks ways to advocate for better acessibility to infomation</span>
+            </p>
           </div>
           <div class="floatRight">
             <p class="vertiLine"></p>
@@ -50,38 +49,49 @@
         </div>
       </section>
       <section id="services" class="section col-12 centerText">
-
         <div class="col-12">
           <h3>SERVICES</h3>
-
-          <p class="col-2 fontMedium servicesDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit natus
-            delectus eum id,
-            quis possimus laudantium. Neque aliquam dolores architecto. Quae odit expedita ipsum dicta qui</p>
+          <p class="col-2 fontMedium servicesDesc">
+            <span>Editing + Proofreading</span>
+            <span>Translation</span>
+          </p>
         </div>
         <div class="col-12">
-          <h3>SERVICES</h3>
-          <p class="col-2 fontMedium servicesDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit natus
-            delectus eum id,
-            quis possimus laudantium. Neque aliquam dolores architecto. Quae odit expedita ipsum dicta qui</p>
+          <h3>AREAS OF EXPERTISE</h3>
+          <p class="col-2 fontMedium servicesDesc">
+            <span>Biomedical Engineering</span>
+            <span>Biotechnology</span>
+            <span>Medicine</span>
+            <span>Nutrition</span>
+            <span>Pharmacology</span>
+          </p>
         </div>
         <div class="col-12">
-          <h3>SERVICES</h3>
-          <p class="col-2 fontMedium servicesDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit natus
-            delectus eum id,
-            quis possimus laudantium. Neque aliquam dolores architecto. Quae odit expedita ipsum dicta qu</p>
+          <h3>SUPPORTED LANGUAGUES</h3>
+          <p class="col-2 fontMedium servicesDesc">
+            <span>English, German, Spanish &rightarrow; Portuguese</span>
+          </p>
         </div>
         <div class="col-12">
-          <h3>SERVICES</h3>
-          <p class="col-2 fontMedium servicesDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit natus
-            delectus eum id,
-            quis possimus laudantium. Neque aliquam dolores architecto. Quae odit expedita ipsum dicta qui</p>
+          <h3>TYPE OF CONTENT</h3>
+          <p class="col-1 fontMedium servicesDesc">
+            <span>Clinical Trials</span>
+            <span>Package Leaflets</span>
+            <span>Patent Applications</span>
+            <span>Scientific Papers</span>
+            <span>Specialized Textbooks</span>
+            <span>Websites</span>
+          </p>
         </div>
-</section>
-        <section class="section col-12 centerText"><div>
-          <p class="col-5 fontBig servicesDesc" style="padding: 10 0 10 0;"> Lorem ipsum dolor sit amet consectetur,
-            adipisicing
-            elit. Similique quibusdam autem et ut
-            dolore non recusandae, dolores minus qui nam, labore numquam architecto provident illo enim voluptatum</p>
+      </section>
+      <section id="quote" class="section col-12 centerText">
+        <div>
+          <p class="col-5 fontBig servicesDesc" style="padding: 10 0 10 0;">
+            <span>She has gathered a whole lot of knowledge and expertise that ranges from specialised terms to writing
+              skills to competency with computer tools.</span>
+            <span>Whether your document is aimed to be read by professionals who will understand the terminology used,
+              or by a general audience, I build the solution that you need from day one</span>
+          </p>
         </div>
       </section>
       <section id="form" class="section form col-10">
@@ -89,8 +99,8 @@
           <form action="index.html?submitted=OK" name="contact" method="POST" data-netlify="true" class="centerText">
             <p class="fontMedium fontBold formP">For exciting collabs</p>
             <div class="col-10 formP">
-              <input class="col-2" type="text" name="name" id="name" placeholder="Name*">
-              <input class="col-2" id="company" name="company" type="text" placeholder="Company"></div>
+              <input class="col-2-5" type="text" name="name" id="name" placeholder="Name*">
+              <input class="col-2-5" id="company" name="company" type="text" placeholder="Company"></div>
             <div class="col-10 formP"><input class="col-4-5" type="email" name="email" id="email" placeholder="Email*">
             </div>
             <div class="col-10 formP"><input class="col-4-5" type="text" name="subject" id="subject"
@@ -99,9 +109,9 @@
             <div class="col-10 formP"><input class="col-4-5" type="text" id="budgetService" name="budgetService"
                 disabled placeholder="Service"></div>
 
-            <div class="col-10 formP"><input class="col-2" type="text" id="budgetPair" name="budgetPair" disabled
+            <div class="col-10 formP"><input class="col-2-5" type="text" id="budgetPair" name="budgetPair" disabled
                 placeholder="Language Pair">
-              <input class="col-2" type="number" id="budgetWord" name="budgetWord" disabled class="budgetVisible"
+              <input class="col-2-5" type="number" id="budgetWord" name="budgetWord" disabled class="budgetVisible"
                 placeholder="Number of words"></div>
             <div class="col-10 formP"><textarea cols="77" rows="5" id="message" name="message" placeholder="Message"
                 style="resize: none;"></textarea></div>
@@ -210,4 +220,5 @@
 
 
 </body>
+
 </html>
