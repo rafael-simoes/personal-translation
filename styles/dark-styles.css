@@ -1,13 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap"); */
+
+@font-face {
+
+
+	font-family: 'Domaine-Regular';
+	src: url('../fonts/DomaineDispNar-Regular.eot');
+	src: local('☺'), url('../fonts/DomaineDispNar-Regular.woff') format('woff'), url('../fonts/DomaineDispNar-Regular.ttf') format('truetype'), url('../fonts/DomaineDispNar-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'LeelaUI';
+	src: url('../fonts/LeelawUI.eot');
+	src: local('☺'), url('../fonts/LeelawUI.woff') format('woff'), url('../fonts/LeelawUI.ttf') format('truetype'), url('../fonts/LeelawUI.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+}
 
 /* For mobile phones: */
 [class*="col-"] {
 	width: 100%;
+	overflow-x: hidden;
 }
+
 
 input[type="text"],
 input[type="number"],
-input[type="email"],
+input[type="email"] {
+	display: inline-block;
+	margin: 2% auto;
+	max-width: 80%;
+	height: 2rem;
+	background-color: black;
+	color: white;
+	border: 2px solid #fff;
+	margin: 2 5;
+}
+
 textarea {
 	display: inline-block;
 	margin: 2% auto;
@@ -15,6 +50,8 @@ textarea {
 	background-color: black;
 	color: white;
 	border: 2px solid #fff;
+	margin: 2 5;
+
 }
 
 input[type="submit"] {
@@ -25,6 +62,15 @@ input[type="submit"] {
 
 #services p {
 	width: 90%;
+	font-family: 'LeelaUI';
+}
+
+#services span {
+	display: block;
+}
+
+#quote span {
+	display: block;
 }
 
 .formP {
@@ -34,10 +80,10 @@ input[type="submit"] {
 
 body {
 	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-	font-family: "DM Mono", monospace;
-	font-weight: 300;
+	font-family: 'Domaine-Regular';
+	font-weight: lighter;
 	overflow: scroll;
-	color: rgb(255, 255, 255);
+	color: #FFFFFF;
 	text-align: left;
 	background-color: rgb(0, 0, 0);
 }
@@ -50,7 +96,7 @@ body {
 .vertiLine {
 	width: 2px;
 	height: 50px;
-	background-color: rgb(255, 255, 255);
+	background-color: #FFFFFF;
 	margin: auto;
 	margin-top: 20;
 }
@@ -92,7 +138,7 @@ body {
 }
 
 .fontBig {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .fontBold {
@@ -114,7 +160,6 @@ h2 {
 }
 
 .main {
-
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -150,8 +195,8 @@ h2 {
 }
 
 .arrow--bottom {
-	bottom: -40rem;
-	right: 2rem;
+	top: 5rem;
+	right: 1rem;
 }
 
 .hideme {
@@ -160,9 +205,8 @@ h2 {
 
 .formSubmit {
 	text-align: right;
-	margin: auto 25;
+	margin: auto 20;
 }
-
 
 /*--------------------------------------arrow animation start---------------------------------------------------*/
 .draw-in {
@@ -281,25 +325,32 @@ h2 {
 	font-size: 0.7rem;
 	letter-spacing: 0.1rem;
 	text-decoration: none;
-	color: white;
+	color: #FFFFFF;
 	display: inline-block;
 	padding: 5px 20px 5px 20px;
 	position: relative;
-	border: 2px solid white;
-	background-color: black;
+	border: 2px solid #FFFFFF;
+	background-color: #000000;
+
 }
 
 .submitBtn:hover {
-	background-color: white;
-	color: black;
+	background-color: #FFFFFF;
+	color: #000000;
 }
 
 /*--------------------------------------slider start---------------------------------------------------*/
+
+.positionDark {
+	position: absolute;
+}
+
 .theme-switch-wrapper {
 	display: flex;
 	align-items: center;
-	margin-left: 80%;
-	margin-right: -20px;
+	margin-left: 85%;
+	top: 2rem;
+	vertical-align: top;
 }
 
 .theme-switch {
@@ -341,7 +392,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-	transform: translateX(15px);
+	transform: translateX(19px);
 }
 
 .slider.round {
@@ -422,6 +473,10 @@ input:checked+.slider:before {
 		width: 16.66%;
 	}
 
+	.col-2-5 {
+		width: 17.05%;
+	}
+
 	.col-3 {
 		width: 25%;
 	}
@@ -471,33 +526,41 @@ input:checked+.slider:before {
 
 	}
 
-	/* 
-	.form {
-		margin-left: -50%;
-		text-align: left;
-	} */
-
 	form p {
 		text-align: left;
 	}
 
 	input[type="text"],
 	input[type="number"],
-	input[type="email"],
+	input[type="email"] {
+		display: inline-block;
+		margin: 2% auto;
+		max-width: 80%;
+		margin: 2 5;
+		height: 2rem;
+	}
+
 	textarea {
 		display: inline-block;
 		margin: 2% auto;
 		max-width: 80%;
+		margin: 2 5;
 	}
 
 	input[type="submit"] {
 		display: inline-block;
-		margin-left: -15rem;
-
 	}
 
 	#services p {
 		max-width: 20%;
+	}
+
+	#services span {
+		display: block;
+	}
+
+	#quote span {
+		display: block;
 	}
 
 	.formP {
@@ -506,10 +569,8 @@ input:checked+.slider:before {
 
 	body {
 		font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-		font-family: "DM Mono", monospace;
-		font-weight: 300;
 		overflow: scroll;
-		color: white;
+		color: #FFFFFF;
 		text-align: left;
 		background-color: rgb(0, 0, 0);
 	}
@@ -523,8 +584,8 @@ input:checked+.slider:before {
 	.vertiLine {
 		width: 2px;
 		height: 50px;
-		background-color: white;
-		margin-left: 37%;
+		background-color: #FFFFFF;
+		margin-left: 35%;
 		margin-top: 20;
 	}
 
@@ -534,7 +595,7 @@ input:checked+.slider:before {
 
 	.floatLeft {
 		float: left;
-		max-width: 20%;
+		max-width: 15%;
 		margin-left: 10rem;
 	}
 
@@ -574,7 +635,6 @@ input:checked+.slider:before {
 
 	form p {
 		text-align: center;
-
 	}
 
 	h1 {
@@ -587,7 +647,6 @@ input:checked+.slider:before {
 	}
 
 	.main {
-	
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -623,17 +682,17 @@ input:checked+.slider:before {
 	}
 
 	.arrow--bottom {
-		bottom: -40rem;
 		right: 2rem;
-	}
-
-	.hideme {
-		opacity: 0;
+		top: 15rem;
 	}
 
 	.formSubmit {
 		text-align: right;
-		margin: auto 30;
+		margin: 5 40;
+	}
+
+	.margintop {
+		margin-top: 10vh;
 	}
 
 	/*--------------------------------------arrow animation start---------------------------------------------------*/
@@ -753,26 +812,32 @@ input:checked+.slider:before {
 		font-size: 0.7rem;
 		letter-spacing: 0.1rem;
 		text-decoration: none;
-		color: white;
+		color: #FFFFFF;
 		display: inline-block;
 		padding: 5px 20px 5px 20px;
 		position: relative;
-		border: 2px solid white;
-		background-color: black;
+		border: 2px solid #FFFFFF;
+		background-color: #000000;
 	}
 
 	.submitBtn:hover {
-		background-color: white;
-		color: black;
+		background-color: #FFFFFF;
+		color: #000000;
 	}
 
 
 	/*--------------------------------------slider start---------------------------------------------------*/
 
+	.positionDark {
+		position: absolute;
+	}
+
 	.theme-switch-wrapper {
 		display: flex;
 		align-items: center;
 		margin-left: 91%;
+		top: 2rem;
+		vertical-align: top;
 	}
 
 	.theme-switch {
@@ -814,7 +879,7 @@ input:checked+.slider:before {
 	}
 
 	input:checked+.slider:before {
-		transform: translateX(16px);
+		transform: translateX(19px);
 	}
 
 	.slider.round {

@@ -29,16 +29,25 @@ html {
 	overflow-x: hidden;
 }
 
-
 input[type="text"],
 input[type="number"],
-input[type="email"],
+input[type="email"] {
+	display: inline-block;
+	margin: 2% auto;
+	max-width: 80%;
+	height: 2rem;
+	border: 2px solid rgb(0, 0, 0);
+	margin: 2 5;
+}
+
 textarea {
 	display: inline-block;
 	margin: 2% auto;
 	max-width: 80%;
-}
+	border: 2px solid rgb(0, 0, 0);
+	margin: 2 5;
 
+}
 input[type="submit"] {
 	display: inline-block;
 	margin-left: -15rem;
@@ -190,9 +199,8 @@ h2 {
 
 .formSubmit {
 	text-align: right;
-	margin: auto 25;
+	margin: auto 20;
 }
-
 
 /*--------------------------------------arrow animation start---------------------------------------------------*/
 .draw-in {
@@ -327,11 +335,16 @@ h2 {
 
 /*--------------------------------------slider start---------------------------------------------------*/
 
+.positionDark {
+	position: absolute;
+}
+
 .theme-switch-wrapper {
 	display: flex;
 	align-items: center;
-	margin-left: 80%;
-	margin-right: -20px;
+	margin-left: 85%;
+	top: 2rem;
+	vertical-align: top;
 }
 
 .theme-switch {
@@ -809,7 +822,7 @@ input:checked+.slider:before {
 
 	/*--------------------------------------slider start---------------------------------------------------*/
 
-	.positionDark{
+	.positionDark {
 		position: absolute;
 	}
 
