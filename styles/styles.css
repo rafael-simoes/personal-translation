@@ -664,7 +664,7 @@ input:checked+.slider:before {
 
 	.arrow--bottom {
 		right: 2rem;
-		top: 15rem;
+		top: 5rem;
 	}
 
 	.formSubmit {
