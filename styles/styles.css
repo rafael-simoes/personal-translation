@@ -38,6 +38,7 @@ input[type="email"] {
 	height: 2rem;
 	border: 2px solid rgb(0, 0, 0);
 	margin: 2 5;
+	padding: 0.5rem;
 }
 
 textarea {
@@ -46,7 +47,7 @@ textarea {
 	max-width: 80%;
 	border: 2px solid rgb(0, 0, 0);
 	margin: 2 5;
-
+padding: 0.5rem;
 }
 input[type="submit"] {
 	display: inline-block;
