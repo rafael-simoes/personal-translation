@@ -392,7 +392,7 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
-	transform: translateX(19px);
+	transform: translateX(15px);
 }
 
 .slider.round {
@@ -688,7 +688,7 @@ input:checked+.slider:before {
 
 	.formSubmit {
 		text-align: right;
-		margin: 5 40;
+		margin: 5 2.5rem;
 	}
 
 	.margintop {
@@ -879,7 +879,7 @@ input:checked+.slider:before {
 	}
 
 	input:checked+.slider:before {
-		transform: translateX(19px);
+		transform: translateX(15px);
 	}
 
 	.slider.round {
