@@ -50,6 +50,14 @@ input[type="submit"] {
 	font-family: 'LeelaUI';
 }
 
+#services span {
+	display: block;
+}
+
+#quote span {
+	display: block;
+}
+
 .formP {
 	text-align: left;
 	margin-left: 2.2rem;
@@ -172,7 +180,7 @@ h2 {
 }
 
 .arrow--bottom {
-	bottom: -40rem;
+	top: 15rem;
 	right: 2rem;
 }
 
