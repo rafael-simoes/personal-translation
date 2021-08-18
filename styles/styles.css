@@ -603,7 +603,7 @@ input:checked+.slider:before {
 	}
 
 	.floatLeft p {
-		font-size: medium;
+		font-size: 1.5rem;
 	}
 
 	.floatRight {
@@ -621,15 +621,15 @@ input:checked+.slider:before {
 	}
 
 	.fontSmall {
-		font-size: 0.8rem;
+		font-size: 1.2rem;
 	}
 
 	.fontMedium {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 
 	.fontBig {
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 
 	.fontBold {
