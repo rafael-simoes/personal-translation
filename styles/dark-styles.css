@@ -83,7 +83,6 @@ input[type="submit"] {
 
 .formP {
 	text-align: left;
-	margin-left: 2.2rem;
 }
 
 body {
@@ -566,6 +565,7 @@ input:checked+.slider:before {
 
 	.formP {
 		text-align: left;
+		margin-left: 2.2rem;
 	}
 
 	body {
