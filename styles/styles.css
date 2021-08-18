@@ -563,6 +563,7 @@ input:checked+.slider:before {
 	#quote span {
 		display: block;
 		line-height: 3rem;
+		font-size: 1.8rem;
 	}
 
 	.formP {
