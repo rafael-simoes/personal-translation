@@ -598,7 +598,7 @@ input:checked+.slider:before {
 
 	.floatLeft {
 		float: left;
-		max-width: 15%;
+		max-width: 25%;
 		margin-left: 10rem;
 	}
 
@@ -621,7 +621,7 @@ input:checked+.slider:before {
 	}
 
 	.fontSmall {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 
 	.fontMedium {
