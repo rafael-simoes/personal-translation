@@ -44,7 +44,7 @@ input[type="email"] {
 textarea {
 	display: inline-block;
 	margin: 2% auto;
-	width: 100%;
+	max-width: 80%;
 	height: 6rem;
 	border: 1px solid rgb(0, 0, 0);
 	margin: 2 5;
@@ -69,7 +69,7 @@ input[type="submit"] {
 
 #quote span {
 	display: block;
-	line-height: 1rem;
+	line-height: 2.5rem;
 }
 
 .formP {
@@ -204,7 +204,7 @@ h2 {
 
 .formSubmit {
 	text-align: right;
-	margin: auto 1.2rem;
+	margin: auto 7.5%;
 }
 
 /*--------------------------------------arrow animation start---------------------------------------------------*/
@@ -542,6 +542,7 @@ input:checked+.slider:before {
 	textarea {
 		display: inline-block;
 		margin: 2% auto;
+		max-width: 80%;
 		width: 35%;
 		height: 6rem;
 		border: 1px solid rgb(0, 0, 0);
