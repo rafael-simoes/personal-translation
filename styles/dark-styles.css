@@ -34,25 +34,25 @@ input[type="text"],
 input[type="number"],
 input[type="email"] {
 	display: inline-block;
-	margin: 2% auto;
+
 	max-width: 80%;
 	height: 2rem;
 	background-color: black;
 	color: white;
 	border: 1px solid #fff;
-	margin: 2 5;
+	margin: 2 auto;
 	padding: 0.5rem;
 }
 
 textarea {
 	display: inline-block;
-	margin: 2% auto;
+
 	max-width: 80%;
 	height: 6rem;
 	background-color: black;
 	color: white;
 	border: 1px solid #fff;
-	margin: 2 5;
+	margin: 2 auto;
 	padding: 0.5rem;
 }
 
@@ -106,7 +106,6 @@ body {
 	height: 50px;
 	background-color: #FFFFFF;
 	margin: auto;
-
 }
 
 .hero {
@@ -207,13 +206,9 @@ h2 {
 	right: 1rem;
 }
 
-.hideme {
-	opacity: 0;
-}
-
 .formSubmit {
 	text-align: right;
-	margin: auto 6.5%;
+	margin: auto 7.5%;
 }
 
 /*--------------------------------------arrow animation start---------------------------------------------------*/

@@ -33,7 +33,7 @@ input[type="text"],
 input[type="number"],
 input[type="email"] {
 	display: inline-block;
-	margin: 2% auto;
+
 	max-width: 80%;
 	height: 2rem;
 	border: 1px solid rgb(0, 0, 0);
@@ -43,7 +43,7 @@ input[type="email"] {
 
 textarea {
 	display: inline-block;
-	margin: 2% auto;
+	
 	max-width: 80%;
 	height: 6rem;
 	border: 1px solid rgb(0, 0, 0);
