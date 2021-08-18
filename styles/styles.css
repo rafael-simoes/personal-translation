@@ -566,7 +566,7 @@ input:checked+.slider:before {
 	#quote span {
 		display: block;
 		line-height: 3rem;
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 
 	.formP {
@@ -659,12 +659,22 @@ input:checked+.slider:before {
 		align-items: center;
 	}
 
+
 	.main:before,
 	.main:after {
 		content: "";
 		display: block;
 		position: absolute;
 		z-index: -3;
+	}
+
+	h1 {
+		font-size: 3rem;
+		margin-bottom: 0.2rem;
+	}
+
+	h2 {
+		font-size: 2rem;
 	}
 
 	.geo-arrow {
