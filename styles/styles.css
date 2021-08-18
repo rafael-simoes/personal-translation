@@ -37,7 +37,7 @@ input[type="email"] {
 	max-width: 80%;
 	height: 2rem;
 	border: 1px solid rgb(0, 0, 0);
-	margin: 2 5;
+	margin: 2 auto;
 	padding: 0.5rem;
 }
 
@@ -47,7 +47,7 @@ textarea {
 	max-width: 80%;
 	height: 6rem;
 	border: 1px solid rgb(0, 0, 0);
-	margin: 2 5;
+	margin: 2 auto;
 	padding: 0.5rem;
 }
 
@@ -533,7 +533,7 @@ input:checked+.slider:before {
 	input[type="number"],
 	input[type="email"] {
 		display: inline-block;
-		margin: 2% auto;
+	
 		max-width: 80%;
 		margin: 2 5;
 		height: 2rem;
@@ -541,12 +541,11 @@ input:checked+.slider:before {
 
 	textarea {
 		display: inline-block;
-		margin: 2% auto;
+		margin: 2 5;
 		max-width: 80%;
 		width: 35%;
 		height: 6rem;
 		border: 1px solid rgb(0, 0, 0);
-		margin: 2 5;
 		padding: 0.5rem;
 	}
 
