@@ -1,3 +1,13 @@
+body {
+	--text-color: #222;
+	--bkg-color: #fff;
+  }
+  body.dark-theme {
+	--text-color: #eee;
+	--bkg-color: #121212;
+  }
+  
+
 @font-face {
 
 

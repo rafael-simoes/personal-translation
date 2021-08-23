@@ -185,7 +185,7 @@ form p {
 /************************************ form ******************************************/
 .geo-arrow {
 	fill: none;
-	stroke: rgba(0, 0, 0, 0.250);
+	stroke: rgba(255, 255, 255, 0.25);
 	stroke-width: 2;
 	stroke-miterlimit: 10
 }
@@ -678,7 +678,7 @@ input:checked+.slider:before {
 
 	.geo-arrow {
 		fill: none;
-		stroke: rgba(0, 0, 0, 0.250);
+		stroke: rgba(255, 255, 255, 0.25);
 		stroke-width: 2;
 		stroke-miterlimit: 10
 	}
