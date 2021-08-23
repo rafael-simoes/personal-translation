@@ -38,7 +38,7 @@ input[type="email"] {
 	margin: 2 auto;
 	padding: 0.5rem;
 	background-color: black;
-	color: white;	
+	color: white;
 }
 
 textarea {
@@ -56,32 +56,20 @@ input[type="submit"] {
 	margin-left: -15rem;
 }
 
-#services p {
-	width: 90%;
-	font-family: 'LeelaUI';
+.fontSmall {
+	font-size: 0.8rem;
 }
 
-#services h3 {
-	margin-bottom: 0;
-	margin-top: 2rem;
-	font-size: 1.7rem;
+.fontMedium {
+	font-size: 1rem;
 }
 
-#services span {
-	display: block;
+.fontBig {
+	font-size: 1.5rem;
 }
 
-#quote span {
-	display: block;
-	line-height: 2.5rem;
-}
-
-.form {
-	margin-left: 0;
-}
-
-.formP {
-	text-align: left;
+.fontBold {
+	font-weight: bold;
 }
 
 body {
@@ -92,6 +80,32 @@ body {
 	color: #FFFFFF;
 	text-align: left;
 	background-color: #000000;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 0.2rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.main:before,
+.main:after {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -3;
 }
 
 .icon {
@@ -129,58 +143,48 @@ body {
 	text-align: center;
 }
 
+/*********************************** services ***************************************/
+#services p {
+	width: 90%;
+	font-family: 'LeelaUI';
+}
+
+#services h3 {
+	margin-bottom: 0;
+	margin-top: 2rem;
+	font-size: 1.7rem;
+}
+
+#services span {
+	display: block;
+}
+
+
 .servicesDesc {
 	text-align: center;
 	margin: auto;
 }
 
-.fontSmall {
-	font-size: 0.8rem;
+/*********************************** services ***************************************/
+#quote span {
+	display: block;
+	line-height: 2.5rem;
 }
 
-.fontMedium {
-	font-size: 1rem;
+/************************************ form ******************************************/
+.form {
+	margin-left: 0;
 }
 
-.fontBig {
-	font-size: 1.5rem;
-}
-
-.fontBold {
-	font-weight: bold;
+.formP {
+	text-align: left;
 }
 
 form p {
 	text-align: center;
-
 }
 
-h1 {
-	font-size: 3rem;
-	margin-bottom: 0.2rem;
-}
-
-h2 {
-	font-size: 2rem;
-}
-
-.main {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	position: relative;
-	justify-content: center;
-	align-items: center;
-}
-
-.main:before,
-.main:after {
-	content: "";
-	display: block;
-	position: absolute;
-	z-index: -3;
-}
-
+/************************************ form ******************************************/
 .geo-arrow {
 	fill: none;
 	stroke: rgba(0, 0, 0, 0.250);
@@ -319,6 +323,7 @@ h2 {
 .formSubmit {
 	text-align: right;
 }
+
 .submitBtn {
 	font-family: lato, sans-serif;
 	font-weight: bold;
@@ -525,9 +530,6 @@ input:checked+.slider:before {
 
 	}
 
-	form p {
-		text-align: left;
-	}
 
 	input[type="text"],
 	input[type="number"],
@@ -672,10 +674,6 @@ input:checked+.slider:before {
 	.formP {
 		text-align: left;
 		margin-left: 2.2rem;
-	}
-
-	form p {
-		text-align: center;
 	}
 
 	/****************************** form ******************************/
@@ -837,6 +835,7 @@ input:checked+.slider:before {
 		background-color: #FFFFFF;
 		color: #000000;
 	}
+
 	/*--------------------------------------slider start---------------------------------------------------*/
 	.positionDark {
 		position: absolute;
