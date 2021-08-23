@@ -29,37 +29,31 @@ html {
 	overflow-x: hidden;
 }
 
-
 input[type="text"],
 input[type="number"],
 input[type="email"] {
 	display: inline-block;
-
-	max-width: 80%;
 	height: 2rem;
-	background-color: black;
-	color: white;
-	border: 1px solid #fff;
+	border: 1px solid #FFFFFF;
 	margin: 2 auto;
 	padding: 0.5rem;
+	background-color: black;
+	color: white;	
 }
 
 textarea {
 	display: inline-block;
-
-	max-width: 80%;
 	height: 6rem;
-	background-color: black;
-	color: white;
-	border: 1px solid #fff;
+	border: 1px solid #FFFFFF;
 	margin: 2 auto;
 	padding: 0.5rem;
+	background-color: black;
+	color: white;
 }
 
 input[type="submit"] {
 	display: inline-block;
 	margin-left: -15rem;
-
 }
 
 #services p {
@@ -70,6 +64,7 @@ input[type="submit"] {
 #services h3 {
 	margin-bottom: 0;
 	margin-top: 2rem;
+	font-size: 1.7rem;
 }
 
 #services span {
@@ -79,6 +74,10 @@ input[type="submit"] {
 #quote span {
 	display: block;
 	line-height: 2.5rem;
+}
+
+.form {
+	margin-left: 0;
 }
 
 .formP {
@@ -92,7 +91,7 @@ body {
 	overflow: scroll;
 	color: #FFFFFF;
 	text-align: left;
-	background-color: rgb(0, 0, 0);
+	background-color: #000000;
 }
 
 .icon {
@@ -123,7 +122,7 @@ body {
 .floatRight {
 	float: right;
 	width: 10%;
-	margin-right: 10px;
+	margin-right: 1rem;
 }
 
 .centerText {
@@ -184,7 +183,7 @@ h2 {
 
 .geo-arrow {
 	fill: none;
-	stroke: rgba(255, 255, 255, 0.25);
+	stroke: rgba(0, 0, 0, 0.250);
 	stroke-width: 2;
 	stroke-miterlimit: 10
 }
@@ -203,11 +202,6 @@ h2 {
 .arrow--bottom {
 	top: 5rem;
 	right: 1rem;
-}
-
-.formSubmit {
-	text-align: right;
-	margin: auto 7.5%;
 }
 
 /*--------------------------------------arrow animation start---------------------------------------------------*/
@@ -321,6 +315,10 @@ h2 {
 }
 
 /*--------------------------------------arrow animation end---------------------------------------------------*/
+
+.formSubmit {
+	text-align: right;
+}
 .submitBtn {
 	font-family: lato, sans-serif;
 	font-weight: bold;
@@ -333,7 +331,6 @@ h2 {
 	position: relative;
 	border: 2px solid #FFFFFF;
 	background-color: #000000;
-
 }
 
 .submitBtn:hover {
@@ -379,7 +376,7 @@ h2 {
 }
 
 .slider:before {
-	background-color: #fff;
+	background-color: #FFFFFF;
 	bottom: 1.9px;
 	content: "";
 	height: 12px;
@@ -542,30 +539,32 @@ input:checked+.slider:before {
 	}
 
 	textarea {
+		display: inline-block;
 		margin: 2 5;
-		border: 1px solid rgb(255, 255, 255);
+		max-width: 80%;
+		width: 35%;
+		height: 6rem;
+		padding: 0.5rem;
 	}
 
 	input[type="submit"] {
 		display: inline-block;
 	}
 
-	#services p {
-		max-width: 20%;
+	.fontSmall {
+		font-size: 1.1rem;
 	}
 
-	#services span {
-		display: block;
+	.fontMedium {
+		font-size: 1.5rem;
 	}
 
-	#quote span {
-		display: block;
-		line-height: 4rem;
+	.fontBig {
+		font-size: 2.5rem;
 	}
 
-	.formP {
-		text-align: left;
-		margin-left: 2.2rem;
+	.fontBold {
+		font-weight: bold;
 	}
 
 	body {
@@ -573,7 +572,34 @@ input:checked+.slider:before {
 		overflow: scroll;
 		color: #FFFFFF;
 		text-align: left;
-		background-color: rgb(0, 0, 0);
+		background-color: #000000;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.main:before,
+	.main:after {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: -3;
+	}
+
+	h1 {
+		font-size: 3rem;
+		margin-bottom: 0.2rem;
+	}
+
+	h2 {
+		font-size: 2rem;
 	}
 
 
@@ -596,12 +622,12 @@ input:checked+.slider:before {
 
 	.floatLeft {
 		float: left;
-		max-width: 15%;
+		max-width: 25%;
 		margin-left: 10rem;
 	}
 
 	.floatLeft p {
-		font-size: medium;
+		font-size: 1.5rem;
 	}
 
 	.floatRight {
@@ -613,60 +639,50 @@ input:checked+.slider:before {
 		text-align: center;
 	}
 
+	#services p {
+		max-width: 20%;
+	}
+
+	#services span {
+		display: block;
+	}
+
 	.servicesDesc {
 		text-align: center;
 		margin: auto;
 	}
 
-	.fontSmall {
-		font-size: 0.8rem;
+	#services h3 {
+		margin-bottom: 0;
+		margin-top: 2rem;
+		font-size: 2.5rem;
 	}
 
-	.fontMedium {
-		font-size: 1rem;
-	}
-
-	.fontBig {
+	#quote span {
+		display: block;
+		line-height: 3rem;
 		font-size: 2rem;
 	}
 
-	.fontBold {
-		font-weight: bold;
+	/****************************** form ******************************/
+	.form {
+		margin-left: 3rem;
+	}
+
+	.formP {
+		text-align: left;
+		margin-left: 2.2rem;
 	}
 
 	form p {
 		text-align: center;
 	}
 
-	h1 {
-		font-size: 3rem;
-		margin-bottom: 0.2rem;
-	}
-
-	h2 {
-		font-size: 2rem;
-	}
-
-	.main {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		position: relative;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.main:before,
-	.main:after {
-		content: "";
-		display: block;
-		position: absolute;
-		z-index: -3;
-	}
+	/****************************** form ******************************/
 
 	.geo-arrow {
 		fill: none;
-		stroke: rgba(255, 255, 255, 0.25);
+		stroke: rgba(0, 0, 0, 0.250);
 		stroke-width: 2;
 		stroke-miterlimit: 10
 	}
@@ -685,15 +701,6 @@ input:checked+.slider:before {
 	.arrow--bottom {
 		right: 2rem;
 		top: 15rem;
-	}
-
-	.formSubmit {
-		text-align: right;
-		margin: 5 2.5rem;
-	}
-
-	.margintop {
-		margin-top: 10vh;
 	}
 
 	/*--------------------------------------arrow animation start---------------------------------------------------*/
@@ -807,6 +814,11 @@ input:checked+.slider:before {
 	}
 
 	/*--------------------------------------arrow animation end---------------------------------------------------*/
+	.formSubmit {
+		text-align: right;
+		margin: 2rem 2.5rem;
+	}
+
 	.submitBtn {
 		font-family: lato, sans-serif;
 		font-weight: bold;
@@ -825,10 +837,7 @@ input:checked+.slider:before {
 		background-color: #FFFFFF;
 		color: #000000;
 	}
-
-
 	/*--------------------------------------slider start---------------------------------------------------*/
-
 	.positionDark {
 		position: absolute;
 	}
@@ -865,7 +874,7 @@ input:checked+.slider:before {
 	}
 
 	.slider:before {
-		background-color: #fff;
+		background-color: #FFFFFF;
 		bottom: 1.9px;
 		content: "";
 		height: 12px;
@@ -890,10 +899,6 @@ input:checked+.slider:before {
 	.slider.round:before {
 		border-radius: 50%;
 	}
-
-
-
-
 }
 
 /*--------------------------------------desktop end---------------------------------------------------*/
