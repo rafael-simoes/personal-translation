@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css" id="themeLink">
+  <link rel="stylesheet" href="styles/styles.min.css" id="themeLink">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <script src="https://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript"></script>
@@ -168,10 +168,10 @@
       const theme = document.querySelector("#themeLink");
 
       // Swap out the URL for the different stylesheets
-      if (theme.getAttribute("href") == "styles/styles.css") {
-        theme.href = "styles/dark-styles.css";
+      if (theme.getAttribute("href") == "styles/styles.min.css") {
+        theme.href = "styles/dark-styles.min.css";
       } else {
-        theme.href = "styles/styles.css";
+        theme.href = "styles/styles.min.css";
       }
     }
 
