@@ -75,7 +75,7 @@ font-size: 1.7rem;
 	display: block;
 	line-height: 2.5rem;
 }
-
+.form{margin-left: 0;}
 .formP {
 	text-align: left;
 }
@@ -568,7 +568,7 @@ input:checked+.slider:before {
 		line-height: 3rem;
 		font-size: 2rem;
 	}
-
+	.form{margin-left: 3rem;}
 	.formP {
 		text-align: left;
 		margin-left: 2.2rem;
