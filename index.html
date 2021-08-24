@@ -152,8 +152,6 @@
   </div>
 
   <script>
-
- 
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
     const currentTheme = localStorage.getItem('theme');
 
@@ -164,11 +162,9 @@
       // Swap out the URL for the different stylesheets
       if (theme.getAttribute("href") == "styles/light.css") {
         theme.href = "styles/dark.css";
-        /* document.documentElement.setAttribute('theme', 'dark'); */
         localStorage.setItem("theme", 'styles/dark.css')
       } else {
         theme.href = "styles/light.css";
-        /* document.documentElement.setAttribute('theme', 'light'); */
         localStorage.setItem("theme", 'styles/light.css')
       }
     }
@@ -183,23 +179,24 @@
       });
     });
 
-  defaultTheme();
+    defaultTheme();
     new fullpage('#fullpage', {
       licenseKey: 'YOUR KEY HERE',
 
     });
- function defaultTheme() {
+
+    function defaultTheme() {
       var el = document.getElementById('themeLink');
       var theme = localStorage.getItem('theme');
 
-      if (theme === "styles/dark.css") {/*dark btn */
-          el.href = theme;
-          document.getElementById("checkbox").checked = true;
-      }else{el.href="styles/light.css";}
-  }
-
-  
-</script>
+      if (theme === "styles/dark.css") {
+        el.href = theme;
+        document.getElementById("checkbox").checked = true;
+      } else {
+        el.href = "styles/light.css";
+      }
+    }
+  </script>
 </body>
 
 </html>
