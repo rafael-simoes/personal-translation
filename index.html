@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" id="themeLink">
+  <link rel="stylesheet" href="styles/light.css" id="themeLink">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <script src="https://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript"></script>
@@ -128,7 +128,7 @@
 
             <div class="col-10 formP"><input class="col-2-5" type="text" id="budgetPair" name="budgetPair" disabled
                 placeholder="Language Pair">
-              <input class="col-2-5" type="number" id="budgetWord" name="budgetWord" disabled class="budgetVisible"
+              <input class="col-2-5" type="number" id="budgetWord" name="budgetWord" disabled min="1" oninput="validity.valid||(value='');" class="budgetVisible"
                 placeholder="Number of words"></div>
             <div class="col-10 formP"><textarea class="col-4-5" required id="message" name="message"
                 placeholder="Message" style="resize: none;"></textarea></div>

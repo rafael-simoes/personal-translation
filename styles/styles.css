@@ -59,6 +59,42 @@ input[type="submit"] {
 	display: inline-block;
 	margin-left: -15rem;
 }
+textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+	opacity: 1; /* Firefox */
+  }
+  
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+  }
+  
+textarea::-ms-input-placeholder { /* Microsoft Edge */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+  }
+  input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+	opacity: 1; /* Firefox */
+  }
+  
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+  }
+  
+input::-ms-input-placeholder { /* Microsoft Edge */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 i{margin: 0;}
 
 .fontSmall {
