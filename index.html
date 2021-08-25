@@ -11,12 +11,24 @@
   <script src="styles/fullpage.js" type="text/javascript"></script>
   <link rel="stylesheet" href="styles/fullpage.css">
 
-  <script type="text/javascript">
+  <script type="text/javascript">   function defaultTheme() {
+      var el = document.getElementById('themeLink');
+      var theme = localStorage.getItem('theme');
+
+      if (theme === "styles/dark.css") {
+        el.href = theme;
+        document.getElementById("checkbox").checked = true;
+      } else {
+        el.href = "styles/light.css";
+      }
+    }
     $(document).ready(function () {
       if (window.location.href.indexOf("OK") > -1) {
         alert("Thanks for the submission!");
       }
     });
+
+ 
   </script>
 
   <title>Sandra Rosa - Translator</title>
@@ -185,17 +197,7 @@
 
     });
 
-    function defaultTheme() {
-      var el = document.getElementById('themeLink');
-      var theme = localStorage.getItem('theme');
-
-      if (theme === "styles/dark.css") {
-        el.href = theme;
-        document.getElementById("checkbox").checked = true;
-      } else {
-        el.href = "styles/light.css";
-      }
-    }
+ 
   </script>
 </body>
 
