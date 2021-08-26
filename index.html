@@ -142,7 +142,7 @@
               <p class="formSubmit"><input type="submit" class="submitBtn" value="Submit"></p>
             </div>
           </form>
-        </div>
+        </div><button id="fitToSection">fitToSection</button>
       </section>
     </div>
   </div>
@@ -202,22 +202,11 @@
     new fullpage('#fullpage', {
 
       licenseKey: 'null',
-
-    
-
-    
-      afterResize: function (width, height) {
-        var fullpageContainer = this;
-        alert("The sections have finished resizing");
-        /* fullpage_api.setFitToSection(true); */
-        /* fullpage_api.fitToSection(); */
-        fullpage_api.reBuild();
-
-
-
       }
       
-    });
+    );$(document).on('click', '#fitToSection', function(){
+  fullpage_api.fitToSection();
+});
   </script>
 </body>
 
