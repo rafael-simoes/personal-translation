@@ -250,6 +250,6 @@ html.fp-enabled,
         table-layout:fixed;
         width: 80%;
         min-height: 100%;
-        top:0;
+        top:auto;
     }
 }
