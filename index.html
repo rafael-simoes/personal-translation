@@ -39,8 +39,8 @@
   <title>Sandra Rosa - Translator</title>
 </head>
 
-<body id="fullpage">
-  <div>
+<body>
+  <div id="fullpage">
     <div class="main">
       <section class="section hero" style="margin-top: 0;">
         <div>
@@ -142,7 +142,7 @@
               <p class="formSubmit"><input type="submit" class="submitBtn" value="Submit"></p>
             </div>
           </form>
-        </div><button id="fitToSection">fitToSection</button>
+        </div>
       </section>
     </div>
   </div>
@@ -203,11 +203,10 @@
       anchors: ['page1', 'page2', 'page3', 'page4'],
       responsiveHeight: 410,
       licenseKey: 'null',
-      }
+      autoScrolling:false,
+      });
       
-    );$(document).on('click', '#fitToSection', function(){
-  fullpage_api.fitToSection();
-});
+      fullpage_api.setFitToSection(true);
   </script>
 </body>
 
