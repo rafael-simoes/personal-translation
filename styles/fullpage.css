@@ -42,6 +42,7 @@ html.fp-enabled,
     display: table;
     table-layout:fixed;
     width: 80%;
+    min-height: 100%;
 }
 .fp-tableCell {
     display: table-cell;
@@ -218,14 +219,12 @@ html.fp-enabled,
 .fp-auto-height .fp-slide,
 .fp-auto-height .fp-tableCell{
     height: auto !important;
-    min-height: 100% !important;
 }
 
 .fp-responsive .fp-auto-height-responsive.fp-section,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
-    min-height: 100% !important;
 }
 
 /*Only display content to screen readers*/
@@ -250,5 +249,5 @@ html.fp-enabled,
         display: table;
         table-layout:fixed;
         width: 100%;
-    }.
+    }
 }
