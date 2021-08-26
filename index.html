@@ -115,7 +115,7 @@
           </p>
         </div>
       </section>
-      <section id="form" class="section col-10">
+      <section id="form" class="section col-10 centerText">
         <div class="form">
           <form action="index.html?submitted=OK" name="contact" method="POST" data-netlify="true" class="centerText">
             <p class="fontMedium formP fontBold">For exciting collaborations</p>
@@ -200,7 +200,8 @@
     defaultTheme();
 
     new fullpage('#fullpage', {
-
+      anchors: ['page1', 'page2', 'page3', 'page4'],
+      responsiveHeight: 410,
       licenseKey: 'null',
       }
       
