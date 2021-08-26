@@ -447,7 +447,7 @@ input:checked+.slider:before {
 }
 
 /*--------------------------------------slider end---------------------------------------------------*/
-@media only screen and (min-width: 480px) {.form{position: fixed;top: 0;}}
+@media only screen and (min-width: 480px) {.form{position: fixed;bottom: 0;}}
 /*--------------------------------------tablet start---------------------------------------------------*/
 @media only screen and (min-width: 600px) {
 
