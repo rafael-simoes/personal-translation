@@ -41,7 +41,7 @@ html.fp-enabled,
 .fp-section.fp-table, .fp-slide.fp-table {
     display: table;
     table-layout:fixed;
-    width: 100%;
+    width: 80%;
 }
 .fp-tableCell {
     display: table-cell;
@@ -247,7 +247,7 @@ html.fp-enabled,
     .fp-section.fp-table, .fp-slide.fp-table {
         display: table;
         table-layout:fixed;
-        width: 80%;
+        width: 100%;
         
     }
-}
+} 
