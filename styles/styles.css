@@ -517,7 +517,7 @@ input:checked+.slider:before {
 	}
 
 	.col-2-5 {
-		width: 17.05%;
+		width:calc(33.33% / 2 - 5px); /* 17.05%; */
 	}
 
 	.col-3 {
@@ -577,15 +577,15 @@ input:checked+.slider:before {
 	input[type="number"],
 	input[type="email"] {
 		display: inline-block;
-		max-width: 80%;
-		margin: 2 5;
+		max-width: 100%;
+		
 		height: 2rem;
 	}
 
 	textarea {
 		display: inline-block;
-		margin: 2 5;
-		max-width: 80%;
+		
+		max-width: 100%;
 		width: 35%;
 		height: 6rem;
 		border: 1px solid #000000;
