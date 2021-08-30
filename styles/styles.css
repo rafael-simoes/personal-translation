@@ -723,6 +723,9 @@ input:checked+.slider:before {
 		text-align: center;
 	}
 
+	.formLeft{ margin-left: .16rem;}
+	.formRight{margin-right: .16rem;}
+
 	/****************************** form ******************************/
 
 	.geo-arrow {

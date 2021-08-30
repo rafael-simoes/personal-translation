@@ -706,6 +706,12 @@ input:checked+.slider:before {
 		text-align: left;
 		margin-left: 2.2rem;
 	}
+	
+	form p {
+		text-align: center;
+	}
+	.formLeft{ margin-left: .16rem;}
+	.formRight{margin-right: .16rem;}
 
 	/****************************** form ******************************/
 
