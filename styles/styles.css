@@ -43,7 +43,8 @@ input[type="email"] {
 	display: inline-block;
 	height: 2rem;
 	border: 1px solid #000000;
-	margin: 2 auto;
+	margin-top: 2;
+	margin-bottom: 2;
 	padding: 0.5rem;
 }
 
@@ -611,7 +612,7 @@ input:checked+.slider:before {
 	.fontBold {
 		font-weight: bold;
 	}
-
+	.fontTitle{font-size: 2.5rem;}
 	body {
 		font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 		overflow: scroll;
@@ -723,8 +724,8 @@ input:checked+.slider:before {
 		text-align: center;
 	}
 
-	.formLeft{ margin-left: .16rem;}
-	.formRight{margin-right: .16rem;}
+	.formLeft{margin-left: 0.16rem;}
+	.formRight{margin-right:.16rem;}
 
 	/****************************** form ******************************/
 
