@@ -530,7 +530,7 @@ input:checked+.slider:before {
 	}
 
 	.col-2-5 {
-		width: calc(33.33% / 2 - 5px);
+		width: calc(16.66% - 4px);
 	}
 
 	.col-3 {
