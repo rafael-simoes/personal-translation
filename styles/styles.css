@@ -1,12 +1,13 @@
 body {
 	--text-color: #222;
 	--bkg-color: #fff;
-  }
-  body.dark-theme {
+}
+
+body.dark-theme {
 	--text-color: #eee;
 	--bkg-color: #121212;
-  }
-  
+}
+
 
 @font-face {
 
@@ -60,43 +61,56 @@ input[type="submit"] {
 	display: inline-block;
 	margin-left: -15rem;
 }
-textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-	opacity: 1; /* Firefox */
-  }
-  
-textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
-	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-  }
-  
-textarea::-ms-input-placeholder { /* Microsoft Edge */
-	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-  }
-  input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-	opacity: 1; /* Firefox */
-  }
-  
-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-  }
-  
-input::-ms-input-placeholder { /* Microsoft Edge */
-	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-  }
 
-  /* Chrome, Safari, Edge, Opera */
+textarea::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+	opacity: 1;
+	/* Firefox */
+}
+
+textarea:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+}
+
+textarea::-ms-input-placeholder {
+	/* Microsoft Edge */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+}
+
+input::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+	opacity: 1;
+	/* Firefox */
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+}
+
+input::-ms-input-placeholder {
+	/* Microsoft Edge */
+	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }
-i{margin: 0;}
+
+i {
+	margin: 0;
+}
 
 .fontSmall {
 	font-size: 1rem;
@@ -109,7 +123,11 @@ i{margin: 0;}
 .fontBig {
 	font-size: 1.5rem;
 }
-.fontTitle{font-size: 1.7rem;}
+
+.fontTitle {
+	font-size: 1.7rem;
+}
+
 .fontBold {
 	font-weight: bold;
 }
@@ -159,7 +177,7 @@ h2 {
 	width: 2px;
 	height: 50px;
 	background-color: #000000;
-	margin:auto;
+	margin: auto;
 }
 
 .hero {
@@ -176,7 +194,7 @@ h2 {
 }
 
 .floatRight {
-	float: right; 
+	float: right;
 }
 
 .centerText {
@@ -518,7 +536,8 @@ input:checked+.slider:before {
 	}
 
 	.col-2-5 {
-		width:calc(16.66% - 4px); /* 17.05%; */
+		width: calc(16.66% - 4px);
+		/* 17.05%; */
 	}
 
 	.col-3 {
@@ -610,7 +629,11 @@ input:checked+.slider:before {
 	.fontBold {
 		font-weight: bold;
 	}
-	.fontTitle{font-size: 2.5rem;}
+
+	.fontTitle {
+		font-size: 2.5rem;
+	}
+
 	body {
 		font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 		overflow: scroll;
@@ -721,9 +744,18 @@ input:checked+.slider:before {
 	form p {
 		text-align: center;
 	}
-.formFlex{display: flex;}
-	.formLeft{margin-left: 4;}
-	.formRight{margin-right:4;}
+
+	.formFlex {
+		display: flex;
+	}
+
+	.formLeft {
+		margin-left: 4;
+	}
+
+	.formRight {
+		margin-right: 4;
+	}
 
 	/****************************** form ******************************/
 

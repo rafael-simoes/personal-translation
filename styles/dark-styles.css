@@ -49,47 +49,62 @@ textarea {
 	background-color: black;
 	color: white;
 }
-i{margin: 0;}
+
+i {
+	margin: 0;
+}
+
 input[type="submit"] {
 	display: inline-block;
 	margin-left: -15rem;
 }
 
-textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+textarea::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
 	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-	opacity: 1; /* Firefox */
-  }
-  
-textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	opacity: 1;
+	/* Firefox */
+}
+
+textarea:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
 	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-  }
-  
-textarea::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+textarea::-ms-input-placeholder {
+	/* Microsoft Edge */
 	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-  }
-  input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+}
+
+input::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
 	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-	opacity: 1; /* Firefox */
-  }
-  
-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	opacity: 1;
+	/* Firefox */
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
 	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-  }
-  
-input::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+input::-ms-input-placeholder {
+	/* Microsoft Edge */
 	font-family: 'LeelaUI', Arial, Helvetica, sans-serif;
-  }
-  /* Chrome, Safari, Edge, Opera */
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
-  }
-  
-  /* Firefox */
-  input[type=number] {
+}
+
+/* Firefox */
+input[type=number] {
 	-moz-appearance: textfield;
-  }
+}
+
 .fontSmall {
 	font-size: 1rem;
 }
@@ -101,7 +116,11 @@ input::-ms-input-placeholder { /* Microsoft Edge */
 .fontBig {
 	font-size: 1.5rem;
 }
-.fontTitle{font-size: 1.7rem;}
+
+.fontTitle {
+	font-size: 1.7rem;
+}
+
 .fontBold {
 	font-weight: bold;
 }
@@ -511,7 +530,7 @@ input:checked+.slider:before {
 	}
 
 	.col-2-5 {
-		width:calc(33.33% / 2 - 5px);
+		width: calc(33.33% / 2 - 5px);
 	}
 
 	.col-3 {
@@ -569,13 +588,13 @@ input:checked+.slider:before {
 	input[type="email"] {
 		display: inline-block;
 		max-width: 100%;
-	
+
 		height: 2rem;
 	}
 
 	textarea {
 		display: inline-block;
-		
+
 		max-width: 100%;
 		width: 35%;
 		height: 6rem;
@@ -601,7 +620,11 @@ input:checked+.slider:before {
 	.fontBold {
 		font-weight: bold;
 	}
-	.fontTitle{font-size: 2.5rem;}
+
+	.fontTitle {
+		font-size: 2.5rem;
+	}
+
 	body {
 		font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 		overflow: scroll;
@@ -708,12 +731,22 @@ input:checked+.slider:before {
 		text-align: left;
 		margin-left: 2.2rem;
 	}
-	
+
 	form p {
 		text-align: center;
 	}
-	.formLeft{ margin-left: .16rem;}
-	.formRight{margin-right: .16rem;}
+
+	.formFlex {
+		display: flex;
+	}
+
+	.formLeft {
+		margin-left: 4;
+	}
+
+	.formRight {
+		margin-right: 4;
+	}
 
 	/****************************** form ******************************/
 
