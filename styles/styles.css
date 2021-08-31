@@ -536,7 +536,7 @@ input:checked+.slider:before {
 	}
 
 	.col-2-5 {
-		width: calc(16.66% - 4px);
+		width: calc(33.33% / 2 - 4px);
 		/* 17.05%; */
 	}
 
@@ -597,14 +597,13 @@ input:checked+.slider:before {
 	input[type="number"],
 	input[type="email"] {
 		display: inline-block;
-		max-width: 100%;
+		width: 100%;
 		height: 2rem;
 	}
 
 	textarea {
 		display: inline-block;
-		max-width: 100%;
-		width: 35%;
+		width: 100%;
 		height: 6rem;
 		border: 1px solid #000000;
 		padding: 0.5rem;
@@ -623,7 +622,7 @@ input:checked+.slider:before {
 	}
 
 	.fontBig {
-		font-size: 2.5rem;
+		font-size: 2.3rem;
 	}
 
 	.fontBold {
@@ -733,12 +732,12 @@ input:checked+.slider:before {
 
 	/****************************** form ******************************/
 	.form {
-		margin-left: 3rem;
+		margin-left: 5.5rem;
 	}
 
 	.formP {
 		text-align: left;
-		margin-left: 2.2rem;
+		
 	}
 
 	form p {
@@ -895,10 +894,9 @@ input:checked+.slider:before {
 	/*--------------------------------------arrow animation end---------------------------------------------------*/
 	.formSubmit {
 		text-align: right;
-		margin: 2rem 2.5rem;
 	}
 
-	.submitBtn {
+	/* .submitBtn {
 		font-family: lato, sans-serif;
 		font-weight: bold;
 		font-size: 0.7rem;
@@ -910,7 +908,7 @@ input:checked+.slider:before {
 		position: relative;
 		border: 2px solid #000000;
 		background-color: #FFFFFF;
-	}
+	} */
 
 	.submitBtn:hover {
 		background-color: #000000;
