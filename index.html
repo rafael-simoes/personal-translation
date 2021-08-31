@@ -28,12 +28,6 @@
         alert("Thanks for the submission!");
       }
     });
-
-    /*   $(function() {
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    $("html, body").css({"width":w,"height":h});
-}); */
   </script>
 
   <title>Sandra Rosa - Translator</title>
@@ -119,7 +113,7 @@
         <div class="form">
           <form action="index.html?submitted=OK" name="contact" method="POST" data-netlify="true" class="centerText">
             <p class="fontMedium formP fontBold">For exciting collaborations</p>
-            <div class="col-10 formP">
+            <div class="col-10 formP formFlex">
               <input class="col-2-5 formRight" type="text" required name="name" id="name" placeholder="Name*">
               <input class="col-2-5 formLeft" id="company" name="company" type="text" placeholder="Company"></div>
             <div class="col-10 formP"><input class="col-4" required type="email" name="email" id="email"
@@ -132,7 +126,7 @@
             <div class="col-10 formP"><input class="col-4" type="text" id="budgetService" name="budgetService"
                 disabled placeholder="Service"></div>
 
-            <div class="col-10 formP"><input class="col-2-5 formRight"type="text" id="budgetPair" name="budgetPair" disabled
+            <div class="col-10 formP formFlex"><input class="col-2-5 formRight"type="text" id="budgetPair" name="budgetPair" disabled
                 placeholder="Language Pair">
               <input class="col-2-5 formLeft" type="number" id="budgetWord" name="budgetWord" disabled min="1"
                 oninput="validity.valid||(value='');" class="budgetVisible" placeholder="Number of words"></div>
@@ -200,12 +194,11 @@
     defaultTheme();
 
     new fullpage('#fullpage', {
-      anchors: ['page1', 'page2', 'page3', 'page4'],
       licenseKey: 'null',
       
       });
       
-      fullpage_api.setFitToSection(true);
+    
   </script>
 </body>
 

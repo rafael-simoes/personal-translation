@@ -518,7 +518,7 @@ input:checked+.slider:before {
 	}
 
 	.col-2-5 {
-		width:calc(33.33% / 2 - 5px); /* 17.05%; */
+		width:calc(16.66% - 4px); /* 17.05%; */
 	}
 
 	.col-3 {
@@ -579,13 +579,11 @@ input:checked+.slider:before {
 	input[type="email"] {
 		display: inline-block;
 		max-width: 100%;
-		
 		height: 2rem;
 	}
 
 	textarea {
 		display: inline-block;
-		
 		max-width: 100%;
 		width: 35%;
 		height: 6rem;
@@ -723,9 +721,9 @@ input:checked+.slider:before {
 	form p {
 		text-align: center;
 	}
-
-	.formLeft{margin-left: 0.16rem;}
-	.formRight{margin-right:.16rem;}
+.formFlex{display: flex;}
+	.formLeft{margin-left: 4;}
+	.formRight{margin-right:4;}
 
 	/****************************** form ******************************/
 
