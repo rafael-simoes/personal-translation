@@ -438,7 +438,7 @@ form p {
 	right: 0;
 	top: 0;
 	transition: .4s;
-}
+} 
 
 .slider:before {
 	background-color: #FFFFFF;
@@ -458,14 +458,14 @@ input:checked+.slider {
 input:checked+.slider:before {
 	transform: translateX(15px);
 }
-
+ 
 .slider.round {
 	border-radius: 34px;
 }
 
-.slider.round:before {
+ .slider.round:before {
 	border-radius: 50%;
-}
+} 
 
 /*--------------------------------------slider end---------------------------------------------------*/
 
@@ -586,34 +586,23 @@ input:checked+.slider:before {
 		width: 100%;
 	}
 
-	input[type="text"] {
-		display: inline;
-
-	}
-
-	form p {
-		text-align: left;
-	}
-
+/* 
 	input[type="text"],
 	input[type="number"],
 	input[type="email"] {
 		display: inline-block;
 		width: 100%;
 		height: 2rem;
-	}
+	} */
 
-	textarea {
+/* 	textarea {
 		display: inline-block;
 		width: 100%;
 		height: 6rem;
 		border: 1px solid #000000;
 		padding: 0.5rem;
-	}
+	} */
 
-	input[type="submit"] {
-		display: inline-block;
-	}
 
 	.fontSmall {
 		font-size: 1.1rem;
@@ -626,22 +615,22 @@ input:checked+.slider:before {
 	.fontBig {
 		font-size: 2.3rem;
 	}
-
+/* 
 	.fontBold {
 		font-weight: bold;
 	}
-
+ */
 	.fontTitle {
 		font-size: 2.5rem;
 	}
-
+/* 
 	body {
 		font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 		overflow: scroll;
 		color: #000000;
 		text-align: left;
 		background-color: #FFFFFF;
-	}
+	} */
 
 	.main {
 		display: flex;
@@ -672,7 +661,7 @@ input:checked+.slider:before {
 
 
 	.icon {
-		font-size: 1.5rem;
+		
 		margin-left: 30%;
 	}
 
@@ -703,9 +692,9 @@ input:checked+.slider:before {
 		width: 10%;
 	}
 
-	.centerText {
+/* 	.centerText {
 		text-align: center;
-	}
+	} */
 
 	#services p {
 		max-width: 20%;
@@ -737,15 +726,15 @@ input:checked+.slider:before {
 		margin-left: 5.5rem;
 	}
 
-	.formP {
+/* 	.formP {
 		text-align: left;
 		
-	}
+	} */
 
-	form p {
+/* 	form p {
 		text-align: center;
 	}
-
+ */
 	.formFlex {
 		display: flex;
 	}
@@ -894,9 +883,9 @@ input:checked+.slider:before {
 	}
  */
 	/*--------------------------------------arrow animation end---------------------------------------------------*/
-	.formSubmit {
+	/* .formSubmit {
 		text-align: right;
-	}
+	} */
 
 	/* .submitBtn {
 		font-family: lato, sans-serif;
@@ -942,42 +931,8 @@ input:checked+.slider:before {
 		display: none;
 	}
 
-	.slider {
-		background-color: #ccc;
-		bottom: 0;
-		cursor: pointer;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		transition: .4s;
-	}
-
-	.slider:before {
-		background-color: #FFFFFF;
-		bottom: 1.9px;
-		content: "";
-		height: 12px;
-		left: 1px;
-		position: absolute;
-		transition: .4s;
-		width: 12px;
-	}
-
-	input:checked+.slider {
-		background-color: #66bb6a;
-	}
-
 	input:checked+.slider:before {
 		transform: translateX(18px);
-	}
-
-	.slider.round {
-		border-radius: 34px;
-	}
-
-	.slider.round:before {
-		border-radius: 50%;
 	}
 }
 
