@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles/styles.min.css" id="themeLink">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
   <script src="styles/fullpage.min.js" type="text/javascript"></script>
   <link rel="stylesheet" href="styles/fullpage.min.css">
 
@@ -50,8 +50,7 @@
         </div>
         <div id="hero">
           <div class="floatLeft"><span class="fontBold fontTitle" style="line-height: 2.5rem;">SANDRA ROSA IS A
-              TRANSLATOR
-              BASED IN LISBON.</span>
+              TRANSLATOR BASED IN LISBON.</span>
             <p class="fontSmall" style="font-family: 'LeelaUI';">
               <span>For her, translation is all about knowledge.</span>
               <span> She seeks ways to advocate for better acessibility to infomation</span>
@@ -103,7 +102,7 @@
       </section>
       <section id="quote" class="section col-12 centerText">
         <div>
-          <p class="col-5 fontBig servicesDesc" style="padding: 10 0 10 0;">
+          <p class="col-5 fontBig servicesDesc" style="padding: 10px 0 10px 0;">
             <span>She has gathered a whole lot of knowledge and expertise that ranges from specialised terms to writing
               skills to competency with computer tools.</span>
             <span>Whether your document is aimed to be read by professionals who will understand the terminology used,
@@ -116,26 +115,30 @@
           <form action="index.html?submitted=OK" name="contact" method="POST" data-netlify="true" class="centerText">
             <p class="fontMedium formP fontBold">For exciting collaborations</p>
             <div class="col-4 formP formFlex">
-              <input class="col-2-5 formRight" type="text" required name="name" id="name" placeholder="Name*" aria-label="name">
-              <input class="col-2-5 formLeft" id="company" name="company" type="text" placeholder="Company" aria-label="company"></div>
-            <div class="col-4 formP formFlex"><input required type="email" name="email" id="email"
-                placeholder="Email*" aria-label="email">
+              <input class="col-2-5 formRight" type="text" required name="name" id="name" placeholder="Name*"
+                aria-label="name">
+              <input class="col-2-5 formLeft" id="company" name="company" type="text" placeholder="Company"
+                aria-label="company"></div>
+            <div class="col-4 formP formFlex"><input required type="email" name="email" id="email" placeholder="Email*"
+                aria-label="email">
             </div>
             <div class="col-4 formP formFlex"><input required type="text" name="subject" id="subject"
                 placeholder="Subject*" aria-label="subject"></div>
             <p class="fontSmall formP" style="font-family: LeelaUI; vertical-align: middle;">Request budget <input
                 id="budgetCheck" type="checkbox" aria-label="request budget check"></p>
-            <div class="col-4 formP formFlex"><input type="text" id="budgetService" name="budgetService"
-                disabled placeholder="Service" aria-label="service"></div>
+            <div class="col-4 formP formFlex"><input type="text" id="budgetService" name="budgetService" disabled
+                placeholder="Service" aria-label="service"></div>
 
-            <div class="col-4 formP formFlex"><input class="col-2-5 formRight"type="text" id="budgetPair" name="budgetPair" disabled
-                placeholder="Language Pair" aria-label="language pair">
+            <div class="col-4 formP formFlex"><input class="col-2-5 formRight" type="text" id="budgetPair"
+                name="budgetPair" disabled placeholder="Language Pair" aria-label="language pair">
               <input class="col-2-5 formLeft" type="number" id="budgetWord" name="budgetWord" disabled min="1"
-                oninput="validity.valid||(value='');" class="budgetVisible" placeholder="Number of words" aria-label="number of words"></div>
-            <div class="col-4 formP formFlex"><textarea required id="message" name="message"
-                placeholder="Message" style="resize: none;" aria-label="message"></textarea></div>
+                oninput="validity.valid||(value='');" class="budgetVisible" placeholder="Number of words"
+                aria-label="number of words"></div>
+            <div class="col-4 formP formFlex"><textarea required id="message" name="message" placeholder="Message"
+                style="resize: none;" aria-label="message"></textarea></div>
             <div class="col-4">
-              <p class="formSubmit"><input type="submit" class="submitBtn" value="Submit" aria-label="submit button"></p>
+              <p class="formSubmit"><input type="submit" class="submitBtn" value="Submit" aria-label="submit button">
+              </p>
             </div>
           </form>
         </div>
@@ -197,10 +200,8 @@
 
     new fullpage('#fullpage', {
       licenseKey: 'null',
-      
-      });
-      
 
+    });
   </script>
 </body>
 
