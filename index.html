@@ -115,26 +115,26 @@
           <form action="index.html?submitted=OK" name="contact" method="POST" data-netlify="true" class="centerText">
             <p class="fontMedium formP fontBold">For exciting collaborations</p>
             <div class="col-4 formP formFlex">
-              <input class="col-2-5 formRight" type="text" required name="name" id="name" placeholder="Name*">
-              <input class="col-2-5 formLeft" id="company" name="company" type="text" placeholder="Company"></div>
+              <input class="col-2-5 formRight" type="text" required name="name" id="name" placeholder="Name*" aria-label="name">
+              <input class="col-2-5 formLeft" id="company" name="company" type="text" placeholder="Company" aria-label="company"></div>
             <div class="col-4 formP"><input required type="email" name="email" id="email"
-                placeholder="Email*">
+                placeholder="Email*" aria-label="email">
             </div>
             <div class="col-4 formP"><input required type="text" name="subject" id="subject"
-                placeholder="Subject*"></div>
+                placeholder="Subject*" aria-label="subject"></div>
             <p class="fontSmall formP" style="font-family: LeelaUI; vertical-align: middle;">Request budget <input
-                id="budgetCheck" type="checkbox"></p>
+                id="budgetCheck" type="checkbox" aria-label="request budget check"></p>
             <div class="col-4 formP"><input type="text" id="budgetService" name="budgetService"
-                disabled placeholder="Service"></div>
+                disabled placeholder="Service" aria-label="service"></div>
 
             <div class="col-4 formP formFlex"><input class="col-2-5 formRight"type="text" id="budgetPair" name="budgetPair" disabled
-                placeholder="Language Pair">
+                placeholder="Language Pair" aria-label="language pair">
               <input class="col-2-5 formLeft" type="number" id="budgetWord" name="budgetWord" disabled min="1"
-                oninput="validity.valid||(value='');" class="budgetVisible" placeholder="Number of words"></div>
+                oninput="validity.valid||(value='');" class="budgetVisible" placeholder="Number of words" aria-label="number of words"></div>
             <div class="col-4 formP"><textarea required id="message" name="message"
-                placeholder="Message" style="resize: none;"></textarea></div>
+                placeholder="Message" style="resize: none;" aria-label="message"></textarea></div>
             <div class="col-4">
-              <p class="formSubmit"><input type="submit" class="submitBtn" value="Submit"></p>
+              <p class="formSubmit"><input type="submit" class="submitBtn" value="Submit" aria-label="submit button"></p>
             </div>
           </form>
         </div>
