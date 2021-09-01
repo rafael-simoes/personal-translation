@@ -33,8 +33,8 @@ input[type="email"] {
 	display: inline-block;
 	height: 2rem;
 	border: 1px solid #FFFFFF;
-	margin-top: 2;
-	margin-bottom: 2;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	padding: 0.5rem;
 	background-color: black;
 	color: white;
@@ -45,7 +45,7 @@ textarea {
 	display: inline-block;
 	height: 6rem;
 	border: 1px solid #FFFFFF;
-	margin: 2 auto;
+	margin: 2px auto;
 	padding: 0.5rem;
 	background-color: black;
 	color: white;
@@ -579,31 +579,6 @@ input:checked+.slider:before {
 		width: 100%;
 	}
 
-	input[type="text"] {
-		display: inline;
-
-	}
-
-
-	input[type="text"],
-	input[type="number"],
-	input[type="email"] {
-		display: inline-block;
-		width: 100%;
-		height: 2rem;
-	}
-
-	textarea {
-		display: inline-block;
-		width: 100%;
-		height: 6rem;
-		padding: 0.5rem;
-	}
-
-	input[type="submit"] {
-		display: inline-block;
-	}
-
 	.fontSmall {
 		font-size: 1.1rem;
 	}
@@ -616,20 +591,8 @@ input:checked+.slider:before {
 		font-size: 2.3rem;
 	}
 
-	.fontBold {
-		font-weight: bold;
-	}
-
 	.fontTitle {
 		font-size: 2.5rem;
-	}
-
-	body {
-		font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-		overflow: scroll;
-		color: #FFFFFF;
-		text-align: left;
-		background-color: #000000;
 	}
 
 	.main {
@@ -692,9 +655,6 @@ input:checked+.slider:before {
 		width: 10%;
 	}
 
-	.centerText {
-		text-align: center;
-	}
 
 	#services p {
 		max-width: 20%;
@@ -726,181 +686,21 @@ input:checked+.slider:before {
 		margin-left: 5.5rem;
 	}
 
-	.formP {
-		text-align: left;
-		
-	}
-
-	form p {
-		text-align: center;
-	}
-
 	.formFlex {
 		display: flex;
 	}
 
 	.formLeft {
-		margin-left: 4;
+		margin-left: 4px;
 	}
 
 	.formRight {
-		margin-right: 4;
+		margin-right: 4px;
 	}
 
 	/****************************** form ******************************/
 
-	.geo-arrow {
-		fill: none;
-		stroke: rgba(255, 255, 255, 0.25);
-		stroke-width: 2;
-		stroke-miterlimit: 10
-	}
-
-	.arrow {
-		z-index: 1000;
-		opacity: 0.5;
-		position: absolute;
-	}
-
-	.arrow--top {
-		top: 0;
-		left: -10rem;
-	}
-
-	.arrow--bottom {
-		right: 2rem;
-		top: 15rem;
-	}
-
-	/*--------------------------------------arrow animation start---------------------------------------------------*/
-	.draw-in {
-		stroke-dasharray: 1000;
-		stroke-dashoffset: 10;
-		animation: draw 15s ease-in-out alternate infinite;
-	}
-
-	@keyframes draw {
-		from {
-			stroke-dashoffset: 1000;
-		}
-
-		to {
-			stroke-dashoffset: 0;
-		}
-	}
-
-	.item-to {
-		animation-duration: 10s;
-		animation-iteration-count: infinite;
-		transform-origin: bottom;
-	}
-
-	.bounce-1 {
-		animation-name: bounce-1;
-		animation-timing-function: ease;
-	}
-
-	.bounce-2 {
-		animation-name: bounce-2;
-		animation-timing-function: ease;
-	}
-
-	.bounce-3 {
-		animation-name: bounce-3;
-		animation-timing-function: ease;
-	}
-
-	@keyframes bounce-1 {
-		0% {
-			transform: translateY(0);
-		}
-
-		50% {
-			transform: translateY(50px);
-		}
-
-		100% {
-			transform: translateY(0);
-		}
-	}
-
-	@keyframes bounce-2 {
-		0% {
-			transform: translateY(0);
-		}
-
-		50% {
-			transform: translateY(-30px);
-		}
-
-		100% {
-			transform: translateY(0);
-		}
-	}
-
-	@keyframes bounce-3 {
-		0% {
-			transform: translateY(0);
-		}
-
-		50% {
-			transform: translateY(30px);
-		}
-
-		100% {
-			transform: translateY(0);
-		}
-	}
-
-	@keyframes rotation {
-		from {
-			transform: rotate(0deg);
-		}
-
-		to {
-			transform: rotate(360deg);
-		}
-	}
-
-	@keyframes gradient-fade {
-		from {
-			transform: translate(10%, -10%) rotate(0deg);
-		}
-
-		to {
-			transform: translate(50%, -50%) rotate(360deg);
-		}
-	}
-
-	@keyframes gradient-fade-alt {
-		from {
-			transform: translate(-20%, 20%) rotate(0deg);
-		}
-
-		to {
-			transform: translate(-60%, 60%) rotate(360deg);
-		}
-	}
-
-	/*--------------------------------------arrow animation end---------------------------------------------------*/
-	.formSubmit {
-		text-align: right;
-	}
-/* 
-	.submitBtn {
-		font-family: lato, sans-serif;
-		font-weight: bold;
-		font-size: 0.7rem;
-		letter-spacing: 0.1rem;
-		text-decoration: none;
-		color: #FFFFFF;
-		display: inline-block;
-		padding: 5px 20px 5px 20px;
-		position: relative;
-		border: 2px solid #FFFFFF;
-		background-color: #000000;
-	}
- */
+	
 	.submitBtn:hover {
 		background-color: #FFFFFF;
 		color: #000000;
@@ -931,43 +731,11 @@ input:checked+.slider:before {
 		display: none;
 	}
 
-	.slider {
-		background-color: #ccc;
-		bottom: 0;
-		cursor: pointer;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-		transition: .4s;
-	}
-
-	.slider:before {
-		background-color: #FFFFFF;
-		bottom: 1.9px;
-		content: "";
-		height: 12px;
-		left: 1px;
-		position: absolute;
-		transition: .4s;
-		width: 12px;
-	}
-
-	input:checked+.slider {
-		background-color: #66bb6a;
-	}
-
+	
 	input:checked+.slider:before {
 		transform: translateX(15px);
 	}
 
-	.slider.round {
-		border-radius: 34px;
-	}
-
-	.slider.round:before {
-		border-radius: 50%;
-	}
 }
 
 /*--------------------------------------desktop end---------------------------------------------------*/
