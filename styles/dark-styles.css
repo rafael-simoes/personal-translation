@@ -31,25 +31,25 @@ input[type="text"],
 input[type="number"],
 input[type="email"] {
 	display: inline-block;
-	height: 2rem;
+	height: 1rem;
 	border: 1px solid #FFFFFF;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	padding: 0.5rem;
 	background-color: black;
 	color: white;
-	width: 100%;
+	width: 94%;
 }
 
 textarea {
 	display: inline-block;
-	height: 6rem;
+	height: 4rem;
 	border: 1px solid #FFFFFF;
 	margin: 2px auto;
 	padding: 0.5rem;
 	background-color: black;
 	color: white;
-	width: 100%;
+	width: 94%;
 }
 
 i {
@@ -595,6 +595,21 @@ input:checked+.slider:before {
 		font-size: 2.5rem;
 	}
 
+	input[type="text"],
+input[type="number"],
+input[type="email"] {
+	height: 2rem;
+
+	width: 100%;
+}
+	textarea {
+
+		width: 100%;
+		height: 6rem;
+
+	} 
+
+	
 	.main {
 		display: flex;
 		flex-direction: column;

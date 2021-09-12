@@ -44,21 +44,21 @@ input[type="text"],
 input[type="number"],
 input[type="email"] {
 	display: inline-block;
-	height: 2rem;
+	height: 1rem;
 	border: 1px solid #000000;
 	margin-top: 2px;
 	margin-bottom: 2px;
 	padding: 0.5rem;
-	width: 100%;
+	width: 94%;
 }
 
 textarea {
 	display: inline-block;
-	height: 6rem;
+	height: 4rem;
 	border: 1px solid #000000;
 	margin: 2px auto;
 	padding: 0.5rem;
-	width: 100%;
+	width: 94%;
 }
 
 input[type="submit"] {
@@ -588,22 +588,19 @@ input:checked+.slider:before {
 		width: 100%;
 	}
 
-/* 
-	input[type="text"],
-	input[type="number"],
-	input[type="email"] {
-		display: inline-block;
-		width: 100%;
-		height: 2rem;
-	} */
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+	height: 2rem;
 
-/* 	textarea {
-		display: inline-block;
+	width: 100%;
+}
+	textarea {
+
 		width: 100%;
 		height: 6rem;
-		border: 1px solid #000000;
-		padding: 0.5rem;
-	} */
+
+	} 
 
 
 	.fontSmall {
